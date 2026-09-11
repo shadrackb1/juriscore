@@ -1,0 +1,34 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="720" height="160" viewBox="0 0 720 160">
+  <rect width="720" height="160" fill="#0D1117"/>
+  <!-- balance beam -->
+  <g stroke="#1F6FEB" stroke-width="2" fill="none">
+    <line x1="360" y1="30" x2="360" y2="90"/>
+    <line x1="260" y1="50" x2="460" y2="50">
+      <animateTransform attributeName="transform" type="rotate" values="-4 360 50;4 360 50;-4 360 50" dur="3.5s" repeatCount="indefinite"/>
+    </line>
+    <circle cx="360" cy="28" r="5" fill="#1F6FEB"/>
+  </g>
+  <!-- pans -->
+  <g fill="#3FB950">
+    <rect x="248" y="70" width="24" height="4"><animate attributeName="y" values="66;74;66" dur="3.5s" repeatCount="indefinite"/></rect>
+    <rect x="448" y="74" width="24" height="4"><animate attributeName="y" values="74;66;74" dur="3.5s" repeatCount="indefinite"/></rect>
+  </g>
+  <!-- case cards -->
+  <g font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#8B949E">
+    <rect x="80" y="40" width="120" height="70" rx="6" fill="#161B22" stroke="#30363D"/>
+    <text x="96" y="62" fill="#E6EDF3">R v. Smith</text>
+    <text x="96" y="80">holding</text>
+    <text x="96" y="96">ratio</text>
+    <rect x="80" y="40" width="120" height="70" rx="6" fill="none" stroke="#1F6FEB" opacity="0.6">
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="2s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="520" y="40" width="120" height="70" rx="6" fill="#161B22" stroke="#30363D"/>
+    <text x="536" y="62" fill="#E6EDF3">AG v. X</text>
+    <text x="536" y="80">issue</text>
+    <text x="536" y="96">dicta</text>
+    <rect x="520" y="40" width="120" height="70" rx="6" fill="none" stroke="#3FB950" opacity="0.6">
+      <animate attributeName="opacity" values="0.8;0.2;0.8" dur="2s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <text x="360" y="145" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#8B949E">case law is a graph. students get an API.</text>
+</svg>

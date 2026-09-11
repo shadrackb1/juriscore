@@ -1,6 +1,9 @@
-<div align="center">
+﻿<div align="center">
 
-# ⚖️ Juriscore
+# âš–ï¸ Juriscore
+
+<img src="./assets/header.svg" width="100%" alt="header" />
+
 
 ### Smarter Legal Research for Kenyan Law Students
 
@@ -15,43 +18,43 @@
 **Juriscore** is a purpose-built legal research mobile application designed for Kenyan law students and early-career legal practitioners. It streamlines the process of finding, analyzing, and organizing case law, statutes, and constitutional provisions.
 
 <p align="center">
-  <a href="#-features">Features</a> •
-  <a href="#-screenshots">Screenshots</a> •
-  <a href="#-quick-start">Quick Start</a> •
-  <a href="#-deployment">Deployment</a> •
+  <a href="#-features">Features</a> â€¢
+  <a href="#-screenshots">Screenshots</a> â€¢
+  <a href="#-quick-start">Quick Start</a> â€¢
+  <a href="#-deployment">Deployment</a> â€¢
   <a href="#-license">License</a>
 </p>
 
 ---
 
-## ✨ Features
+## âœ¨ Features
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>🔍 Smart Case Search</h3>
+      <h3>ðŸ” Smart Case Search</h3>
       <p>Search and filter cases by keyword, court level, year, judge, or legal subject area</p>
-      <h3>📋 Structured Case Briefs</h3>
+      <h3>ðŸ“‹ Structured Case Briefs</h3>
       <p>Automated summaries including facts, issues, holdings, ratio decidendi, and obiter dicta</p>
     </td>
     <td width="50%" valign="top">
-      <h3>⚖️ Case Comparison</h3>
+      <h3>âš–ï¸ Case Comparison</h3>
       <p>Side-by-side comparison of two cases with key differences highlighted</p>
-      <h3>📖 Citation Generator</h3>
+      <h3>ðŸ“– Citation Generator</h3>
       <p>Properly formatted eKLR citations ready for submission</p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>🏛️ Constitution Hub</h3>
+      <h3>ðŸ›ï¸ Constitution Hub</h3>
       <p>Browse the Constitution of Kenya (2010) with chapter-level navigation</p>
-      <h3>🧠 Flashcard System</h3>
+      <h3>ðŸ§  Flashcard System</h3>
       <p>Study with spaced-repetition flashcards organized by legal subject</p>
     </td>
     <td width="50%" valign="top">
-      <h3>📓 Research Notebook</h3>
+      <h3>ðŸ““ Research Notebook</h3>
       <p>Save cases and take notes organized in folders</p>
-      <h3>📄 PDF Export</h3>
+      <h3>ðŸ“„ PDF Export</h3>
       <p>Export case briefs, comparisons, and statutes as PDF files</p>
     </td>
   </tr>
@@ -59,7 +62,7 @@
 
 ---
 
-## 📸 Screenshots
+## ðŸ“¸ Screenshots
 
 <div align="center">
 
@@ -69,11 +72,11 @@
 
 </div>
 
-> 📱 Replace placeholder images with actual screenshots from the app
+> ðŸ“± Replace placeholder images with actual screenshots from the app
 
 ---
 
-## 🛠️ Tech Stack
+## ðŸ› ï¸ Tech Stack
 
 <div align="center">
 
@@ -89,7 +92,7 @@
 
 ---
 
-## 🚀 Quick Start
+## ðŸš€ Quick Start
 
 ### Prerequisites
 
@@ -97,7 +100,7 @@
 ![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Supabase](https://img.shields.io/badge/Supabase-Account-3FCF8E?style=flat-square)
 
-### 1️⃣ Backend Setup
+### 1ï¸âƒ£ Backend Setup
 
 ```bash
 cd backend
@@ -108,11 +111,11 @@ uvicorn main:app --reload
 
 <div align="center">
 
-📖 API Documentation: [http://localhost:8000/docs](http://localhost:8000/docs)
+ðŸ“– API Documentation: [http://localhost:8000/docs](http://localhost:8000/docs)
 
 </div>
 
-### 2️⃣ Frontend Setup
+### 2ï¸âƒ£ Frontend Setup
 
 ```bash
 cd frontend
@@ -121,7 +124,7 @@ cp .env .env.backup  # Edit .env with your Supabase credentials
 npx expo start
 ```
 
-### 3️⃣ Database Setup
+### 3ï¸âƒ£ Database Setup
 
 1. Create a Supabase project at [supabase.com](https://supabase.com)
 2. Run the SQL migration in Supabase SQL Editor:
@@ -135,7 +138,7 @@ npx expo start
    python -m database.seed_data
    ```
 
-### 4️⃣ Docker (Optional)
+### 4ï¸âƒ£ Docker (Optional)
 
 ```bash
 docker-compose up
@@ -143,9 +146,9 @@ docker-compose up
 
 ---
 
-## 🌐 Deployment
+## ðŸŒ Deployment
 
-### Frontend → Vercel
+### Frontend â†’ Vercel
 
 <div align="center">
 
@@ -159,7 +162,7 @@ docker-compose up
 4. Framework: Expo
 5. Deploy
 
-### Backend → Render / Railway
+### Backend â†’ Render / Railway
 
 <div align="center">
 
@@ -176,7 +179,7 @@ docker-compose up
 
 ---
 
-## ⚙️ Environment Variables
+## âš™ï¸ Environment Variables
 
 ### Backend (`backend/.env`)
 
@@ -211,39 +214,39 @@ EXPO_PUBLIC_API_URL=http://localhost:8000/api
 
 ---
 
-## 📁 Project Structure
+## ðŸ“ Project Structure
 
 ```
 juriscore/
-├── 📂 backend/
-│   ├── main.py              # FastAPI entry point
-│   ├── routers/             # API route handlers
-│   ├── services/            # Scraper, business logic
-│   ├── models/              # Database models & schemas
-│   ├── middleware/           # Auth middleware
-│   ├── database/            # Seed data
-│   └── requirements.txt
-│
-├── 📂 frontend/
-│   ├── app/                 # Expo Router screens
-│   │   ├── (tabs)/          # Tab navigation screens
-│   │   ├── document.tsx     # In-app document viewer
-│   │   └── _layout.tsx      # Root layout
-│   ├── lib/
-│   │   └── api.ts           # API client
-│   ├── package.json
-│   └── app.json
-│
-├── 📂 supabase/
-│   └── migrations/          # SQL schema migrations
-│
-├── docker-compose.yml
-└── vercel.json
+â”œâ”€â”€ ðŸ“‚ backend/
+â”‚   â”œâ”€â”€ main.py              # FastAPI entry point
+â”‚   â”œâ”€â”€ routers/             # API route handlers
+â”‚   â”œâ”€â”€ services/            # Scraper, business logic
+â”‚   â”œâ”€â”€ models/              # Database models & schemas
+â”‚   â”œâ”€â”€ middleware/           # Auth middleware
+â”‚   â”œâ”€â”€ database/            # Seed data
+â”‚   â””â”€â”€ requirements.txt
+â”‚
+â”œâ”€â”€ ðŸ“‚ frontend/
+â”‚   â”œâ”€â”€ app/                 # Expo Router screens
+â”‚   â”‚   â”œâ”€â”€ (tabs)/          # Tab navigation screens
+â”‚   â”‚   â”œâ”€â”€ document.tsx     # In-app document viewer
+â”‚   â”‚   â””â”€â”€ _layout.tsx      # Root layout
+â”‚   â”œâ”€â”€ lib/
+â”‚   â”‚   â””â”€â”€ api.ts           # API client
+â”‚   â”œâ”€â”€ package.json
+â”‚   â””â”€â”€ app.json
+â”‚
+â”œâ”€â”€ ðŸ“‚ supabase/
+â”‚   â””â”€â”€ migrations/          # SQL schema migrations
+â”‚
+â”œâ”€â”€ docker-compose.yml
+â””â”€â”€ vercel.json
 ```
 
 ---
 
-## 🤝 Contributing
+## ðŸ¤ Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
@@ -255,7 +258,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ---
 
-## ⚠️ Legal Disclaimer
+## âš ï¸ Legal Disclaimer
 
 <div align="center">
 
@@ -267,7 +270,7 @@ Always verify information against official sources before citing in formal submi
 
 ---
 
-## 📄 License
+## ðŸ“„ License
 
 <div align="center">
 
@@ -277,7 +280,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ---
 
-**Built with ❤️ for Kenyan Law Students**
+**Built with â¤ï¸ for Kenyan Law Students**
 
 <p align="center">
   <a href="https://github.com/ishiidoc96-ship-it/juriscore">
