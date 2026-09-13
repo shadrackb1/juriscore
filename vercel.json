@@ -2,21 +2,13 @@
   "version": 2,
   "framework": null,
   "installCommand": "pip install -r requirements.txt",
-  "buildCommand": "echo 'static + python function'",
-  "functions": {
-    "api/index.py": {
-      "maxDuration": 60,
-      "memory": 1024
-    }
-  },
+  "buildCommand": "echo ok",
+  "outputDirectory": "public",
   "builds": [
     {
       "src": "api/index.py",
       "use": "@vercel/python",
-      "config": {
-        "maxDuration": 60,
-        "maxLambdaSize": "50mb"
-      }
+      "config": { "maxDuration": 60 }
     },
     {
       "src": "public/**",
@@ -24,7 +16,6 @@
     }
   ],
   "routes": [
-    { "src": "/api/index.py", "dest": "/api/index.py" },
     { "src": "/api/v1/(.*)", "dest": "/api/index.py" },
     { "src": "/health", "dest": "/api/index.py" },
     { "src": "/ready", "dest": "/api/index.py" },
@@ -35,21 +26,6 @@
     { "src": "/login", "dest": "/public/app.html" },
     { "src": "/css/(.*)", "dest": "/public/css/$1" },
     { "src": "/js/(.*)", "dest": "/public/js/$1" },
-    { "src": "/(.*\\.(css|js|png|jpg|jpeg|svg|ico|json|txt|woff|woff2|ttf|eot|html|webp|map))", "dest": "/public/$1" },
     { "src": "/", "dest": "/public/app.html" }
-  ],
-  "headers": [
-    {
-      "source": "/css/(.*)",
-      "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=86400" }
-      ]
-    },
-    {
-      "source": "/js/(.*)",
-      "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=86400" }
-      ]
-    }
   ]
 }
