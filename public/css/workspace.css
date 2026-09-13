@@ -46,6 +46,25 @@ a:hover { text-decoration: underline; }
   outline-offset: 2px;
   border-radius: 4px;
 }
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 100;
+  background: var(--accent);
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 0 0 8px 0;
+  font-weight: 600;
+}
+.skip-link:focus { left: 0; }
+.brand-mark img,
+.brand-mark-svg {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: block;
+}
 
 /* Shell */
 .shell { display: flex; min-height: 100vh; }
@@ -68,9 +87,8 @@ a:hover { text-decoration: underline; }
 }
 .brand-mark {
   width: 32px; height: 32px; border-radius: 8px;
-  background: var(--accent); color: #fff;
-  display: grid; place-items: center; font-weight: 700; font-size: 15px;
-  font-family: var(--font-display);
+  overflow: hidden;
+  flex-shrink: 0;
 }
 .brand-name { font-family: var(--font-display); font-weight: 700; font-size: 18px; letter-spacing: -0.02em; }
 .brand-sub { font-size: 11px; color: var(--muted); }

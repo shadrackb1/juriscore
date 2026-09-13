@@ -73,21 +73,43 @@ Judgment catalog entries include title, citation, court, year, topic, and source
 
 ## Architecture
 
+```mermaid
+flowchart TB
+  subgraph clients [Clients]
+    W[Web workspace<br/>public/app.html]
+    M[Expo mobile<br/>frontend/]
+  end
+  subgraph api [FastAPI /api/v1]
+    S[Search]
+    C[Corpus catalogs]
+    T[Study tools API]
+    A[Auth JWT]
+  end
+  subgraph data [Local corpus]
+    K[data/corpus JSON<br/>~25k docs]
+    L[legal_db judgments]
+  end
+  W --> S
+  W --> C
+  M --> S
+  M --> A
+  S --> K
+  S --> L
+  C --> K
+  A --> T
 ```
+
+```text
 juriscore/
 ├── api/                    # Vercel entry (api/index.py) → FastAPI app
 │   └── backend/
 │       ├── main.py         # App, middleware, routers
 │       ├── routers/        # search, auth, study, corpus catalogs, …
-│       ├── services/
-│       │   └── corpus.py   # Local corpus loader + search index
+│       ├── services/corpus.py
 │       └── data/corpus/    # JSON legal corpus (shipped with repo)
-├── public/                 # Web research workspace (static)
-│   ├── app.html
-│   └── css/workspace.css
-├── frontend/               # Expo React Native app
-├── Dockerfile + compose
-└── vercel.json             # Serverless Python + static routes
+├── public/                 # Web research workspace (no sign-in)
+├── frontend/               # Expo React Native
+└── vercel.json
 ```
 
 **Stack:** FastAPI · SQLAlchemy (SQLite / Postgres) · JWT auth · Expo/React Native · optional Docker · Vercel serverless.

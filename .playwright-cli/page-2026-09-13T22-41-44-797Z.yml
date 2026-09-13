@@ -1,0 +1,59 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - complementary [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]: J
+        - generic [ref=e6]:
+          - generic [ref=e7]: Juriscore
+          - generic [ref=e8]: Research workspace
+      - navigation [ref=e9]:
+        - button "Home" [ref=e10] [cursor=pointer]
+        - button "Search" [ref=e13] [cursor=pointer]
+        - button "Constitution" [ref=e17] [cursor=pointer]
+        - button "Notebook" [ref=e21] [cursor=pointer]
+        - button "Flashcards" [ref=e25] [cursor=pointer]
+        - button "Bookmarks" [ref=e28] [cursor=pointer]
+        - generic [ref=e31]: Library
+        - button "Statutes" [ref=e32] [cursor=pointer]
+        - button "Gazette" [ref=e35] [cursor=pointer]
+        - button "Cause lists" [ref=e39] [cursor=pointer]
+      - generic [ref=e44]:
+        - generic [ref=e45]: J
+        - generic [ref=e46]:
+          - generic [ref=e47]: Local workspace
+          - generic [ref=e48]: Notes stay on this device
+    - generic [ref=e49]:
+      - banner [ref=e50]:
+        - generic [ref=e51]: Home
+        - button "Search" [ref=e54] [cursor=pointer]
+      - generic [ref=e56]:
+        - generic [ref=e57]:
+          - heading "What are you researching?" [level=1] [ref=e58]
+          - paragraph [ref=e59]: Search judgments, statutes, and the Constitution. Open a result to read a structured brief, then save it to your notebook.
+          - generic [ref=e60]:
+            - searchbox "e.g. unfair termination, Article 27, robbery with violence…" [ref=e61]
+            - button "Search" [ref=e62] [cursor=pointer]
+          - generic [ref=e63]:
+            - button "Fair hearing" [ref=e64] [cursor=pointer]
+            - button "Equality" [ref=e65] [cursor=pointer]
+            - button "Land acquisition" [ref=e66] [cursor=pointer]
+            - button "Employment" [ref=e67] [cursor=pointer]
+            - button "Succession" [ref=e68] [cursor=pointer]
+            - button "Murder" [ref=e69] [cursor=pointer]
+        - generic [ref=e70]: Jump to
+        - generic [ref=e71]:
+          - button "Constitution of Kenya Bill of Rights, judiciary, devolution — article by article" [ref=e72] [cursor=pointer]:
+            - generic [ref=e73]: Constitution of Kenya
+            - generic [ref=e74]: Bill of Rights, judiciary, devolution — article by article
+          - button "Acts & Cap. laws Penal Code, Evidence, Employment, Land, tax and more" [ref=e75] [cursor=pointer]:
+            - generic [ref=e76]: Acts & Cap. laws
+            - generic [ref=e77]: Penal Code, Evidence, Employment, Land, tax and more
+          - button "Your notebook Briefs and notes you saved while researching" [ref=e78] [cursor=pointer]:
+            - generic [ref=e79]: Your notebook
+            - generic [ref=e80]: Briefs and notes you saved while researching
+          - button "Flashcards Spaced review of holdings and principles" [ref=e81] [cursor=pointer]:
+            - generic [ref=e82]: Flashcards
+            - generic [ref=e83]: Spaced review of holdings and principles
+        - generic [ref=e84]: Corpus
+        - generic [ref=e85]: Loading local legal corpus…
+  - status
