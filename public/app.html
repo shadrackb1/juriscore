@@ -10,50 +10,8 @@
   <link rel="stylesheet" href="/css/workspace.css" />
 </head>
 <body>
-  <!-- LOGIN -->
-  <div id="auth-view" class="login-wrap" hidden>
-    <div class="login-card">
-      <div class="brand" style="border:none;margin:0 0 18px;padding:0">
-        <div class="brand-mark">J</div>
-        <div>
-          <div class="brand-name">Juriscore</div>
-          <div class="brand-sub">Kenyan legal research</div>
-        </div>
-      </div>
-      <h1 id="auth-title">Welcome back</h1>
-      <p class="sub" id="auth-sub">Sign in to save briefs, notebooks and flashcards.</p>
-      <div class="tabs">
-        <button type="button" id="tab-login" class="active">Sign in</button>
-        <button type="button" id="tab-signup">Create account</button>
-      </div>
-      <div id="auth-error" class="error-banner" hidden></div>
-      <form id="auth-form">
-        <div class="field" id="wrap-name" hidden>
-          <label for="auth-name">Full name</label>
-          <input id="auth-name" type="text" autocomplete="name" placeholder="Jane Mwangi" />
-        </div>
-        <div class="field">
-          <label for="auth-email">Email</label>
-          <input id="auth-email" type="email" autocomplete="email" required placeholder="you@law.ac.ke" />
-        </div>
-        <div class="field">
-          <label for="auth-password">Password</label>
-          <input id="auth-password" type="password" autocomplete="current-password" required minlength="6" placeholder="••••••••" />
-        </div>
-        <div class="field" id="wrap-uni" hidden>
-          <label for="auth-uni">University (optional)</label>
-          <input id="auth-uni" type="text" placeholder="e.g. University of Nairobi" />
-        </div>
-        <button type="submit" class="btn btn-primary" style="width:100%;min-height:44px" id="auth-submit">Sign in</button>
-      </form>
-      <p style="margin-top:16px;font-size:12px;color:var(--muted);text-align:center">
-        Guest browse is available after sign-in for this build. Local API at <code>/api/v1</code>.
-      </p>
-    </div>
-  </div>
-
   <!-- APP -->
-  <div id="app-view" class="shell" hidden>
+  <div id="app-view" class="shell">
     <div class="backdrop" id="backdrop"></div>
     <aside class="sidebar" id="sidebar">
       <div class="brand">
@@ -103,14 +61,13 @@
         </button>
       </nav>
       <div class="sidebar-foot">
-        <button class="user-chip" id="user-btn">
-          <div class="avatar" id="user-avatar">U</div>
+        <div class="user-chip" style="cursor:default">
+          <div class="avatar">J</div>
           <div style="flex:1;min-width:0">
-            <div class="user-name" id="user-name">Guest</div>
-            <div class="user-mail" id="user-email">—</div>
+            <div class="user-name">Local workspace</div>
+            <div class="user-mail">Notes stay on this device</div>
           </div>
-        </button>
-        <button class="btn" style="width:100%;margin-top:8px" id="logout-btn">Sign out</button>
+        </div>
       </div>
     </aside>
 
@@ -265,29 +222,21 @@ const API = '/api/v1';
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 
-function token() { return localStorage.getItem('juriscore_token'); }
-function user() {
-  try { return JSON.parse(localStorage.getItem('juriscore_user') || 'null'); } catch { return null; }
+/* Local storage helpers — no accounts */
+function lsGet(key, fallback) {
+  try { return JSON.parse(localStorage.getItem(key) || 'null') ?? fallback; }
+  catch { return fallback; }
 }
-function saveAuth(t, u) {
-  localStorage.setItem('juriscore_token', t);
-  localStorage.setItem('juriscore_user', JSON.stringify(u));
+function lsSet(key, val) {
+  localStorage.setItem(key, JSON.stringify(val));
 }
-function clearAuth() {
-  localStorage.removeItem('juriscore_token');
-  localStorage.removeItem('juriscore_user');
+function uid() {
+  return 'id-' + Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
 }
 
 async function api(path, opts = {}) {
   const headers = { 'Content-Type': 'application/json', ...(opts.headers || {}) };
-  const t = token();
-  if (t) headers.Authorization = 'Bearer ' + t;
   const res = await fetch(API + path, { ...opts, headers });
-  if (res.status === 401) {
-    clearAuth();
-    showAuth();
-    throw new Error('Session expired. Sign in again.');
-  }
   if (!res.ok) {
     let detail = 'Request failed (' + res.status + ')';
     try { const j = await res.json(); detail = j.detail || j.message || detail; } catch {}
@@ -307,77 +256,6 @@ function toast(msg) {
 function esc(s) {
   return String(s ?? '').replace(/[&<>"']/g, c => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c]));
 }
-
-/* ── Auth ─────────────────────────────────────────── */
-let authMode = 'login';
-function showAuth() {
-  $('#auth-view').hidden = false;
-  $('#app-view').hidden = true;
-}
-function showApp() {
-  $('#auth-view').hidden = true;
-  $('#app-view').hidden = false;
-  const u = user();
-  if (u) {
-    $('#user-name').textContent = u.name || 'Student';
-    $('#user-email').textContent = u.email || '';
-    const initials = (u.name || 'U').split(' ').map(p => p[0]).join('').slice(0, 2).toUpperCase();
-    $('#user-avatar').textContent = initials;
-  }
-}
-
-function setAuthMode(mode) {
-  authMode = mode;
-  $('#tab-login').classList.toggle('active', mode === 'login');
-  $('#tab-signup').classList.toggle('active', mode === 'signup');
-  $('#wrap-name').hidden = mode === 'login';
-  $('#wrap-uni').hidden = mode === 'login';
-  $('#auth-title').textContent = mode === 'login' ? 'Welcome back' : 'Create your account';
-  $('#auth-sub').textContent = mode === 'login'
-    ? 'Sign in to save briefs, notebooks and flashcards.'
-    : 'Free for law students. Save research as you go.';
-  $('#auth-submit').textContent = mode === 'login' ? 'Sign in' : 'Create account';
-  $('#auth-error').hidden = true;
-}
-
-$('#tab-login').onclick = () => setAuthMode('login');
-$('#tab-signup').onclick = () => setAuthMode('signup');
-
-$('#auth-form').onsubmit = async (e) => {
-  e.preventDefault();
-  const btn = $('#auth-submit');
-  const err = $('#auth-error');
-  err.hidden = true;
-  btn.disabled = true;
-  btn.textContent = authMode === 'login' ? 'Signing in…' : 'Creating…';
-  try {
-    const body = {
-      email: $('#auth-email').value.trim(),
-      password: $('#auth-password').value,
-    };
-    if (authMode === 'signup') {
-      body.name = $('#auth-name').value.trim();
-      body.university = $('#auth-uni').value.trim() || undefined;
-      if (!body.name) throw new Error('Enter your full name.');
-    }
-    const data = await api('/auth/' + authMode, { method: 'POST', body: JSON.stringify(body) });
-    saveAuth(data.token, data.user);
-    showApp();
-    bootApp();
-    toast(authMode === 'login' ? 'Signed in' : 'Account created');
-  } catch (ex) {
-    err.textContent = ex.message;
-    err.hidden = false;
-  } finally {
-    btn.disabled = false;
-    btn.textContent = authMode === 'login' ? 'Sign in' : 'Create account';
-  }
-};
-
-$('#logout-btn').onclick = () => {
-  clearAuth();
-  showAuth();
-};
 
 /* ── Navigation ───────────────────────────────────── */
 const TITLES = {
@@ -417,7 +295,6 @@ $('#backdrop').onclick = () => {
   $('#sidebar').classList.remove('open');
   $('#backdrop').classList.remove('show');
 };
-$('#user-btn').onclick = () => toast('Signed in as ' + (user()?.email || 'guest'));
 
 /* ── Search ───────────────────────────────────────── */
 let activeFilter = '';
@@ -497,23 +374,28 @@ async function runSearch(q) {
       btn.onclick = () => openDetail(results[+btn.dataset.open]);
     });
     box.querySelectorAll('[data-bookmark]').forEach(btn => {
-      btn.onclick = async (e) => {
+      btn.onclick = (e) => {
         e.stopPropagation();
         const r = results[+btn.dataset.bookmark];
-        try {
-          await api('/bookmarks/', {
-            method: 'POST',
-            body: JSON.stringify({
-              resource_type: r.doc_type === 'statutes' ? 'statutes' : 'cases',
-              resource_id: r.id || r.title,
-              title: r.title,
-              metadata: { citation: r.citation, court: r.court, year: r.year, url: r.url },
-            }),
-          });
-          toast('Bookmarked');
-          btn.textContent = 'Saved';
-          btn.disabled = true;
-        } catch (ex) { toast(ex.message); }
+        const items = lsGet('juriscore_bookmarks', []);
+        const id = r.id || r.title;
+        if (items.some(x => x.id === id || x.title === r.title)) {
+          toast('Already bookmarked');
+          return;
+        }
+        items.unshift({
+          id,
+          resource_type: r.doc_type === 'statutes' ? 'statutes' : 'cases',
+          title: r.title,
+          citation: r.citation,
+          court: r.court,
+          year: r.year,
+          url: r.url,
+        });
+        lsSet('juriscore_bookmarks', items);
+        toast('Bookmarked');
+        btn.textContent = 'Saved';
+        btn.disabled = true;
       };
     });
     box.querySelectorAll('.result').forEach((card, i) => {
@@ -591,7 +473,7 @@ function openDetail(r) {
     }
   };
 
-  $('#save-brief').onclick = async () => {
+  $('#save-brief').onclick = () => {
     const note = [
       '## ' + (r.title || 'Untitled'),
       r.citation ? 'Citation: ' + r.citation : '',
@@ -599,32 +481,25 @@ function openDetail(r) {
       holding ? 'Holding: ' + holding : '',
       ratio ? 'Ratio: ' + ratio : '',
     ].filter(Boolean).join('\n\n');
-    try {
-      await api('/study/notes', { method: 'POST', body: JSON.stringify({ note_text: note, case_id: r.id }) });
-      toast('Saved to notebook');
-    } catch (ex) { toast(ex.message); }
+    const notes = lsGet('juriscore_notes', []);
+    notes.unshift({ id: uid(), note_text: note, created_at: new Date().toISOString() });
+    lsSet('juriscore_notes', notes);
+    toast('Saved to notebook');
   };
 
-  $('#save-card').onclick = async () => {
+  $('#save-card').onclick = () => {
     const front = prompt('Flashcard front (question):', 'What is the holding in ' + (r.title || 'this case') + '?');
     if (!front) return;
     const back = prompt('Flashcard back (answer):', holding || ratio || facts || 'See brief');
     if (!back) return;
-    try {
-      let decks = await api('/flashcards/decks');
-      if (!Array.isArray(decks) || !decks.length) {
-        const deck = await api('/flashcards/decks', {
-          method: 'POST',
-          body: JSON.stringify({ title: 'Saved from research', subject: r.doc_type || 'Case law' }),
-        });
-        decks = [deck];
-      }
-      await api('/flashcards/decks/' + decks[0].id + '/cards', {
-        method: 'POST',
-        body: JSON.stringify({ front, back }),
-      });
-      toast('Flashcard added');
-    } catch (ex) { toast(ex.message); }
+    let decks = lsGet('juriscore_decks', []);
+    if (!decks.length) {
+      decks = [{ id: uid(), title: 'Saved from research', subject: r.doc_type || 'Case law', cards: [] }];
+    }
+    if (!decks[0].cards) decks[0].cards = [];
+    decks[0].cards.unshift({ id: uid(), front, back });
+    lsSet('juriscore_decks', decks);
+    toast('Flashcard added');
   };
 }
 
@@ -701,165 +576,141 @@ function renderConst(q = '') {
 
 $('#const-q').oninput = (e) => renderConst(e.target.value.trim());
 
-/* ── Notebook ─────────────────────────────────────── */
-async function loadNotes() {
+/* ── Notebook (local) ─────────────────────────────── */
+function loadNotes() {
   const box = $('#notes-list');
-  box.innerHTML = '<div class="state"><div class="spinner"></div></div>';
-  try {
-    const notes = await api('/study/notes');
-    if (!Array.isArray(notes) || !notes.length) {
-      box.innerHTML = '<div class="empty"><div class="state-title">No notes yet</div><div class="state-text">Open a search result and choose “Save to notebook”.</div></div>';
-      return;
-    }
-    box.innerHTML = notes.map(n => {
-      const text = n.note_text || '';
-      return `<article class="card">
-        <div class="prose" style="white-space:pre-wrap;font-size:14px">${esc(text)}</div>
-        <div class="row-between" style="margin-top:10px">
-          <span style="font-size:11px;color:var(--muted)">${esc(n.updated_at || n.created_at || '')}</span>
-          <button class="btn btn-danger" data-del-note="${esc(n.id)}">Delete</button>
-        </div>
-      </article>`;
-    }).join('');
-    box.querySelectorAll('[data-del-note]').forEach(btn => {
-      btn.onclick = async () => {
-        if (!confirm('Delete this note?')) return;
-        try {
-          await api('/study/notes/' + btn.dataset.delNote, { method: 'DELETE' });
-          toast('Note deleted');
-          loadNotes();
-        } catch (ex) { toast(ex.message); }
-      };
-    });
-  } catch (ex) {
-    box.innerHTML = `<div class="empty"><div class="state-title">Notebook unavailable</div><div class="state-text">${esc(ex.message)}</div></div>`;
+  const notes = lsGet('juriscore_notes', []);
+  if (!notes.length) {
+    box.innerHTML = '<div class="empty"><div class="state-title">No notes yet</div><div class="state-text">Open a search result and choose “Save to notebook”.</div></div>';
+    return;
   }
+  box.innerHTML = notes.map(n => `
+    <article class="card">
+      <div class="prose" style="white-space:pre-wrap;font-size:14px">${esc(n.note_text || '')}</div>
+      <div class="row-between" style="margin-top:10px">
+        <span style="font-size:11px;color:var(--muted)">${esc(n.created_at || '')}</span>
+        <button class="btn btn-danger" data-del-note="${esc(n.id)}">Delete</button>
+      </div>
+    </article>
+  `).join('');
+  box.querySelectorAll('[data-del-note]').forEach(btn => {
+    btn.onclick = () => {
+      if (!confirm('Delete this note?')) return;
+      lsSet('juriscore_notes', notes.filter(x => x.id !== btn.dataset.delNote));
+      toast('Note deleted');
+      loadNotes();
+    };
+  });
 }
 
-$('#new-note-btn').onclick = async () => {
+$('#new-note-btn').onclick = () => {
   const text = prompt('Note text');
   if (!text) return;
-  try {
-    await api('/study/notes', { method: 'POST', body: JSON.stringify({ note_text: text }) });
-    toast('Note saved');
-    loadNotes();
-  } catch (ex) { toast(ex.message); }
+  const notes = lsGet('juriscore_notes', []);
+  notes.unshift({ id: uid(), note_text: text, created_at: new Date().toISOString() });
+  lsSet('juriscore_notes', notes);
+  toast('Note saved');
+  loadNotes();
 };
 
-/* ── Flashcards ───────────────────────────────────── */
-let studyDeck = null;
-async function loadDecks() {
+/* ── Flashcards (local) ───────────────────────────── */
+function loadDecks() {
   $('#study-panel').hidden = true;
   const box = $('#decks-list');
-  box.innerHTML = '<div class="state"><div class="spinner"></div></div>';
-  try {
-    const decks = await api('/flashcards/decks');
-    if (!Array.isArray(decks) || !decks.length) {
-      box.innerHTML = '<div class="empty"><div class="state-title">No decks yet</div><div class="state-text">Create a deck, or save a flashcard from any case brief.</div></div>';
-      return;
-    }
-    box.innerHTML = decks.map(d => `
-      <article class="card">
-        <div class="row-between">
-          <div>
-            <div class="tile-title">${esc(d.title)}</div>
-            <div class="tile-sub">${esc(d.subject || 'General')}</div>
-          </div>
-          <button class="btn btn-primary" data-study="${esc(d.id)}">Study</button>
-        </div>
-      </article>
-    `).join('');
-    box.querySelectorAll('[data-study]').forEach(btn => {
-      btn.onclick = () => startStudy(btn.dataset.study);
-    });
-  } catch (ex) {
-    box.innerHTML = `<div class="empty"><div class="state-title">Flashcards unavailable</div><div class="state-text">${esc(ex.message)}</div></div>`;
+  const decks = lsGet('juriscore_decks', []);
+  if (!decks.length) {
+    box.innerHTML = '<div class="empty"><div class="state-title">No decks yet</div><div class="state-text">Create a deck, or save a flashcard from any case brief.</div></div>';
+    return;
   }
+  box.innerHTML = decks.map(d => `
+    <article class="card">
+      <div class="row-between">
+        <div>
+          <div class="tile-title">${esc(d.title)}</div>
+          <div class="tile-sub">${esc(d.subject || 'General')} · ${(d.cards || []).length} cards</div>
+        </div>
+        <button class="btn btn-primary" data-study="${esc(d.id)}">Study</button>
+      </div>
+    </article>
+  `).join('');
+  box.querySelectorAll('[data-study]').forEach(btn => {
+    btn.onclick = () => startStudy(btn.dataset.study);
+  });
 }
 
-$('#new-deck-btn').onclick = async () => {
+$('#new-deck-btn').onclick = () => {
   const title = prompt('Deck name');
   if (!title) return;
-  const subject = prompt('Subject (optional)') || undefined;
-  try {
-    await api('/flashcards/decks', { method: 'POST', body: JSON.stringify({ title, subject }) });
-    toast('Deck created');
-    loadDecks();
-  } catch (ex) { toast(ex.message); }
+  const subject = prompt('Subject (optional)') || 'General';
+  const decks = lsGet('juriscore_decks', []);
+  decks.unshift({ id: uid(), title, subject, cards: [] });
+  lsSet('juriscore_decks', decks);
+  toast('Deck created');
+  loadDecks();
 };
 
-async function startStudy(deckId) {
+function startStudy(deckId) {
   const panel = $('#study-panel');
   panel.hidden = false;
-  panel.innerHTML = '<div class="state"><div class="spinner"></div></div>';
-  try {
-    const cards = await api('/flashcards/decks/' + deckId + '/cards');
-    if (!cards.length) {
-      panel.innerHTML = '<div class="empty"><div class="state-title">Empty deck</div><div class="state-text">Add cards from a case brief.</div></div>';
-      return;
-    }
-    let i = 0, revealed = false;
-    const render = () => {
-      const c = cards[i];
-      panel.innerHTML = `
-        <div class="section-title">Studying · ${i + 1} / ${cards.length}</div>
-        <div class="flashcard-face">
-          <div class="flashcard-label">${revealed ? 'Answer' : 'Prompt'}</div>
-          <div class="flashcard-text">${esc(revealed ? c.back : c.front)}</div>
-        </div>
-        <div class="hstack">
-          ${!revealed
-            ? '<button class="btn btn-primary" id="reveal">Show answer</button>'
-            : '<button class="btn" id="again">Again</button><button class="btn btn-primary" id="next">Got it</button>'}
-          <button class="btn" id="exit-study">Exit</button>
-        </div>`;
-      if ($('#reveal')) $('#reveal').onclick = () => { revealed = true; render(); };
-      if ($('#again')) $('#again').onclick = () => { revealed = false; i = Math.min(i + 1, cards.length - 1); render(); };
-      if ($('#next')) $('#next').onclick = () => {
-        revealed = false;
-        if (i + 1 >= cards.length) { toast('Deck complete'); panel.hidden = true; return; }
-        i += 1; render();
-      };
-      $('#exit-study').onclick = () => { panel.hidden = true; };
-    };
-    render();
-  } catch (ex) {
-    panel.innerHTML = `<div class="empty"><div class="state-title">Could not load cards</div><div class="state-text">${esc(ex.message)}</div></div>`;
+  const decks = lsGet('juriscore_decks', []);
+  const deck = decks.find(d => d.id === deckId);
+  const cards = (deck && deck.cards) || [];
+  if (!cards.length) {
+    panel.innerHTML = '<div class="empty"><div class="state-title">Empty deck</div><div class="state-text">Add cards from a case brief.</div></div>';
+    return;
   }
+  let i = 0, revealed = false;
+  const render = () => {
+    const c = cards[i];
+    panel.innerHTML = `
+      <div class="section-title">Studying · ${i + 1} / ${cards.length}</div>
+      <div class="flashcard-face">
+        <div class="flashcard-label">${revealed ? 'Answer' : 'Prompt'}</div>
+        <div class="flashcard-text">${esc(revealed ? c.back : c.front)}</div>
+      </div>
+      <div class="hstack">
+        ${!revealed
+          ? '<button class="btn btn-primary" id="reveal">Show answer</button>'
+          : '<button class="btn" id="again">Again</button><button class="btn btn-primary" id="next">Got it</button>'}
+        <button class="btn" id="exit-study">Exit</button>
+      </div>`;
+    if ($('#reveal')) $('#reveal').onclick = () => { revealed = true; render(); };
+    if ($('#again')) $('#again').onclick = () => { revealed = false; i = Math.min(i + 1, cards.length - 1); render(); };
+    if ($('#next')) $('#next').onclick = () => {
+      revealed = false;
+      if (i + 1 >= cards.length) { toast('Deck complete'); panel.hidden = true; return; }
+      i += 1; render();
+    };
+    $('#exit-study').onclick = () => { panel.hidden = true; };
+  };
+  render();
 }
 
-/* ── Bookmarks ────────────────────────────────────── */
-async function loadBookmarks() {
+/* ── Bookmarks (local) ────────────────────────────── */
+function loadBookmarks() {
   const box = $('#bookmarks-list');
-  box.innerHTML = '<div class="state"><div class="spinner"></div></div>';
-  try {
-    const items = await api('/bookmarks/');
-    if (!Array.isArray(items) || !items.length) {
-      box.innerHTML = '<div class="empty"><div class="state-title">No bookmarks</div><div class="state-text">Bookmark cases from search results.</div></div>';
-      return;
-    }
-    box.innerHTML = items.map(b => `
-      <article class="card">
-        <div class="result-meta"><span class="court">${esc(b.resource_type)}</span></div>
-        <h3 class="result-title" style="font-size:16px">${esc(b.title)}</h3>
-        ${b.metadata?.citation ? `<div class="result-cite">${esc(b.metadata.citation)}</div>` : ''}
-        <div class="result-actions">
-          <button class="btn btn-danger" data-del-bm="${esc(b.id)}">Remove</button>
-        </div>
-      </article>
-    `).join('');
-    box.querySelectorAll('[data-del-bm]').forEach(btn => {
-      btn.onclick = async () => {
-        try {
-          await api('/bookmarks/' + btn.dataset.delBm, { method: 'DELETE' });
-          toast('Removed');
-          loadBookmarks();
-        } catch (ex) { toast(ex.message); }
-      };
-    });
-  } catch (ex) {
-    box.innerHTML = `<div class="empty"><div class="state-title">Bookmarks unavailable</div><div class="state-text">${esc(ex.message)}</div></div>`;
+  const items = lsGet('juriscore_bookmarks', []);
+  if (!items.length) {
+    box.innerHTML = '<div class="empty"><div class="state-title">No bookmarks</div><div class="state-text">Bookmark cases from search results.</div></div>';
+    return;
   }
+  box.innerHTML = items.map(b => `
+    <article class="card">
+      <div class="result-meta"><span class="court">${esc(b.resource_type || 'document')}</span></div>
+      <h3 class="result-title" style="font-size:16px">${esc(b.title)}</h3>
+      ${b.citation ? `<div class="result-cite">${esc(b.citation)}</div>` : ''}
+      <div class="result-actions">
+        <button class="btn btn-danger" data-del-bm="${esc(b.id)}">Remove</button>
+      </div>
+    </article>
+  `).join('');
+  box.querySelectorAll('[data-del-bm]').forEach(btn => {
+    btn.onclick = () => {
+      lsSet('juriscore_bookmarks', items.filter(x => x.id !== btn.dataset.delBm));
+      toast('Removed');
+      loadBookmarks();
+    };
+  });
 }
 
 /* ── Library views ────────────────────────────────── */
@@ -981,18 +832,8 @@ async function bootApp() {
   }
 }
 
-// Guest mode: allow browse without login for usability
 (function init() {
-  setAuthMode('login');
-  if (token() && user()) {
-    showApp();
-    bootApp();
-  } else {
-    // Still allow guest research (notebook/bookmarks need auth)
-    showApp();
-    bootApp();
-    toast('Guest mode — sign in to save notes');
-  }
+  bootApp();
 })();
   </script>
 </body>
