@@ -1,0 +1,860 @@
+[
+  {
+    "id": "case-mumo-machakos",
+    "title": "Mumo Matemu v Trusted Society of Human Rights Alliance & 5 others",
+    "citation": "[2013] eKLR",
+    "court": "Court of Appeal",
+    "year": 2013,
+    "date": "2013-05-24",
+    "judge": "Githinji, Okwengu, Visram JJJA",
+    "topics": [
+      "Constitutional Law",
+      "Standing",
+      "Public Interest Litigation",
+      "Commission on Administrative Justice"
+    ],
+    "summary": {
+      "facts": "The appellant challenged clearance and appointment processes before the High Court via public interest petition. Respondents raised locus standi and procedural objections.",
+      "issues": [
+        "Standing in public interest petitions under Article 22",
+        "Role of the courts in reviewing appointments to commissions",
+        "Whether the petition disclosed a cause of action"
+      ],
+      "holding": "Public interest standing under Article 22 is broad; technical objections cannot defeat constitutional litigation where rights or public interest are engaged.",
+      "ratio": "Article 22 and the Fair Administrative Action Act require courts to resolve disputes on substance; standing rules must not become barriers to constitutional enforcement.",
+      "obiter": "The court emphasised that access to justice under Article 48 must be given real effect."
+    },
+    "full_text": "Court of Appeal decision on locus standi and public interest litigation under the Constitution of Kenya 2010. The Court held that the broad standing provisions in Article 22 enable persons acting in the public interest to institute constitutional claims. Procedural technicalities must not defeat substantive justice. Judicial review of administrative appointments requires engagement with merits where constitutional standards are implicated.",
+    "url": null,
+    "source": "local_corpus"
+  },
+  {
+    "id": "case-mitu-bell",
+    "title": "Mitu-Bell Welfare Society v Attorney General & 2 others",
+    "citation": "[2013] eKLR",
+    "court": "High Court",
+    "year": 2013,
+    "date": "2013-01-30",
+    "judge": "Majanja J",
+    "topics": [
+      "Eviction",
+      "Housing",
+      "Right to Property",
+      "Fair Administrative Action",
+      "Human Rights"
+    ],
+    "summary": {
+      "facts": "Residents of Mitu-Bell informal settlement faced eviction without adequate notice, consultation, or alternative settlement.",
+      "issues": [
+        "Whether forced eviction without process violates Articles 40, 43 and 47",
+        "Duties of state agencies before evictions",
+        "Remedies available to affected communities"
+      ],
+      "holding": "Evictions must comply with constitutional and human-rights standards including notice, consultation, and, where appropriate, resettlement.",
+      "ratio": "The right to accessible and adequate housing and fair administrative action constrains eviction powers; arbitrary demolitions are unconstitutional.",
+      "obiter": "Courts can issue structural remedies requiring plans for affected persons."
+    },
+    "full_text": "The High Court held that evictions from informal settlements must respect constitutional rights. State agencies must act lawfully, give notice, and consider alternatives. The decision is a leading Kenyan authority on socio-economic rights and forced evictions.",
+    "url": null,
+    "source": "local_corpus"
+  },
+  {
+    "id": "case-njoya",
+    "title": "Njoya & 6 others v Attorney General & 4 others",
+    "citation": "[2004] eKLR",
+    "court": "High Court",
+    "year": 2004,
+    "date": "2004-04-06",
+    "judge": "Ringera J (as he then was)",
+    "topics": [
+      "Constitutional Amendment",
+      "Referendum",
+      "Popular Initiative"
+    ],
+    "summary": {
+      "facts": "Petitioners challenged the Constitution of Kenya Review Act and processes used to adopt a draft constitution.",
+      "issues": [
+        "Whether Parliament could prescribe a process inconsistent with popular initiative requirements",
+        "Role of a referendum in constitutional replacement"
+      ],
+      "holding": "Constitutional amendment and review processes must follow the supreme law; Parliament cannot rewrite constitutional rules by ordinary statute.",
+      "ratio": "The people are the source of constituent power; procedures for constitutional change must be constitutionally compliant.",
+      "obiter": "The court discussed the distinction between amendment and replacement of a constitution."
+    },
+    "full_text": "Leading pre-2010 authority on constitutional review. The High Court emphasised that constituent power belongs to the people and that statutory processes for constitutional review cannot override constitutional requirements.",
+    "url": null,
+    "source": "local_corpus"
+  },
+  {
+    "id": "case-gicheru-moi",
+    "title": "Republic v Daniel Toroitich arap Moi & 2 others ex parte Gicheru",
+    "citation": "[2008] eKLR",
+    "court": "High Court",
+    "year": 2008,
+    "date": "2008-11-07",
+    "judge": "Nyamu J",
+    "topics": [
+      "Civil Procedure",
+      "Res Judicata",
+      "Limitation of Actions"
+    ],
+    "summary": {
+      "facts": "Applicant sought to reopen issues said to have been determined in prior proceedings involving land and public officers.",
+      "issues": [
+        "Application of res judicata",
+        "Limitation periods for land claims"
+      ],
+      "holding": "Matters already adjudicated between the same parties cannot be relitigated; limitation statutes apply.",
+      "ratio": "Finality of litigation and limitation statutes protect legal certainty.",
+      "obiter": "Public interest does not automatically open closed proceedings."
+    },
+    "full_text": "Illustrates Kenyan application of res judicata and the Limitation of Actions Act to claims involving public land and former state officers.",
+    "url": null,
+    "source": "local_corpus"
+  },
+  {
+    "id": "case-reverse-judiciary",
+    "title": "Judicial Service Commission v Speaker of the National Assembly & another",
+    "citation": "[2014] eKLR",
+    "court": "Supreme Court",
+    "year": 2014,
+    "date": "2014-06-04",
+    "judge": "Mutunga CJ",
+    "topics": [
+      "Judicial Independence",
+      "Institutional Autonomy",
+      "Constitution"
+    ],
+    "summary": {
+      "facts": "Dispute over interference with the independence of the Judiciary and the Judicial Service Commission.",
+      "issues": [
+        "Scope of judicial independence under Articles 160–161",
+        "Whether other arms of government may direct the Judiciary"
+      ],
+      "holding": "The Judiciary is subject only to the Constitution and the law; political organs cannot control judicial functions.",
+      "ratio": "Independence of the Judiciary is a constitutional guarantee essential to the rule of law.",
+      "obiter": "Institutional autonomy includes control of administrative decisions within the JSC."
+    },
+    "full_text": "Supreme Court authority reaffirming judicial independence. The Court held that executive and legislative organs may not direct or control the Judiciary or the JSC in the performance of their functions.",
+    "url": null,
+    "source": "local_corpus"
+  },
+  {
+    "id": "case-centre-education",
+    "title": "Centre for Rights Education and Awareness (CREAW) & another v Speaker of the National Assembly",
+    "citation": "[2017] eKLR",
+    "court": "High Court",
+    "year": 2017,
+    "date": "2017-03-30",
+    "judge": "Mativo J",
+    "topics": [
+      "Gender Equality",
+      "Two-Thirds Gender Rule",
+      "Constitution"
+    ],
+    "summary": {
+      "facts": "Petitioners sought enforcement of the two-thirds gender principle in elective and appointive bodies.",
+      "issues": [
+        "Whether Parliament had enacted legislation to implement the two-thirds gender rule",
+        "Consequences of legislative inaction"
+      ],
+      "holding": "State organs have a duty to implement the Constitution; prolonged legislative inaction can be justiciable.",
+      "ratio": "Articles 27 and 81 require progressive realisation of gender equality in representation; courts may compel action.",
+      "obiter": "Structural orders may be used where systemic non-compliance is shown."
+    },
+    "full_text": "High Court decision on the two-thirds gender principle. The court found that failure to enact implementing legislation violated constitutional obligations on equality and representation.",
+    "url": null,
+    "source": "local_corpus"
+  },
+  {
+    "id": "case-attorney-general-katiba",
+    "title": "Coalition for Reform and Democracy (CORD) & 2 others v Republic of Kenya & 10 others",
+    "citation": "[2015] eKLR",
+    "court": "High Court",
+    "year": 2015,
+    "date": "2015-02-26",
+    "judge": "Lenaola, Mumbi Ngugi, Majanja JJ",
+    "topics": [
+      "Security Laws",
+      "Freedom of Expression",
+      "Counter-Terrorism",
+      "Bill of Rights"
+    ],
+    "summary": {
+      "facts": "Petitioners challenged provisions of the Security Laws (Amendment) Act 2014 alleged to limit fundamental freedoms.",
+      "issues": [
+        "Whether security legislation disproportionately limited freedom of expression and media",
+        "Limitation analysis under Article 24"
+      ],
+      "holding": "Several provisions were struck down as unconstitutional for failing the Article 24 limitation test.",
+      "ratio": "National security does not justify blanket limits on rights; each limitation must be necessary and proportionate.",
+      "obiter": "Counter-terrorism measures remain subject to the Bill of Rights."
+    },
+    "full_text": "Landmark constitutional review of security legislation. The High Court applied Article 24 and struck down provisions that unjustifiably restricted freedom of expression and other rights.",
+    "url": null,
+    "source": "local_corpus"
+  },
+  {
+    "id": "case-okenda",
+    "title": "Kenya Commercial Bank Ltd & another v Samuel Kamau Macharia & 2 others",
+    "citation": "[2008] eKLR",
+    "court": "Supreme Court",
+    "year": 2008,
+    "date": "2008-12-19",
+    "judge": "Supreme Court",
+    "topics": [
+      "Banking",
+      "Set-Off",
+      "Commercial Law"
+    ],
+    "summary": {
+      "facts": "Dispute over bank's exercise of set-off and rights under security documents.",
+      "issues": [
+        "Scope of contractual set-off",
+        "Whether bank acted within contractual and statutory powers"
+      ],
+      "holding": "A bank may exercise contractual set-off where the contract clearly confers the right and conditions are met.",
+      "ratio": "Commercial contracts are enforced according to their terms subject to statutory controls on unconscionability.",
+      "obiter": "Courts will not rewrite commercial bargains absent vitiating factors."
+    },
+    "full_text": "Commercial law authority on bank set-off and enforcement of security. Illustrates contractual interpretation in Kenyan banking disputes.",
+    "url": null,
+    "source": "local_corpus"
+  },
+  {
+    "id": "case-farmers-party",
+    "title": "Independent Electoral and Boundaries Commission v National Super Alliance (NASA) & 3 others",
+    "citation": "[2017] eKLR",
+    "court": "Supreme Court",
+    "year": 2017,
+    "date": "2017-09-01",
+    "judge": "Maraga CJ",
+    "topics": [
+      "Electoral Law",
+      "Presidential Election",
+      "Article 140",
+      "Nullification"
+    ],
+    "summary": {
+      "facts": "Challenge to the 2017 presidential election results alleging irregularities and illegalities in transmission and tallying.",
+      "issues": [
+        "Standard for nullification of a presidential election under Article 140(3)",
+        "Role of technology and results declaration forms"
+      ],
+      "holding": "The presidential election of 8 August 2017 was declared invalid for non-compliance with the Constitution and the law.",
+      "ratio": "An election is a process, not an event; substantial compliance with electoral law is required, and systemic irregularities that affect integrity justify nullification.",
+      "obiter": "The Court ordered a fresh election within 60 days."
+    },
+    "full_text": "Historic Supreme Court decision annulling a presidential election in Africa. The Court held that IEBC failed to conduct the election in accordance with the Constitution and the Elections Act, and ordered a fresh poll.",
+    "url": null,
+    "source": "local_corpus"
+  },
+  {
+    "id": "case-asset-recovery",
+    "title": "Ethics and Anti-Corruption Commission v Deepak Kamani & another",
+    "citation": "[2015] eKLR",
+    "court": "High Court",
+    "year": 2015,
+    "date": "2015-06-12",
+    "judge": "Various",
+    "topics": [
+      "Anti-Corruption",
+      "Asset Recovery",
+      "Public Finance"
+    ],
+    "summary": {
+      "facts": "EACC sought recovery of assets alleged to be proceeds of crime connected to public procurement.",
+      "issues": [
+        "Standard of proof in civil asset recovery",
+        "Meaning of unexplained assets"
+      ],
+      "holding": "Civil recovery is determined on balance of probabilities; respondents must explain legitimate sources of wealth where prima facie case is shown.",
+      "ratio": "Anti-corruption civil processes are distinct from criminal prosecution and aim at recovery of public resources.",
+      "obiter": "Article 73 leadership and integrity values underpin recovery actions."
+    },
+    "full_text": "Illustrates civil asset recovery under anti-corruption legislation. Courts may order forfeiture where assets are shown to be proceeds of crime or unexplained wealth on the civil standard.",
+    "url": null,
+    "source": "local_corpus"
+  },
+  {
+    "id": "case-land-environment",
+    "title": "Kenya Ports Authority v Kenya Power & Lighting Company Limited",
+    "citation": "[2012] eKLR",
+    "court": "Environment and Land Court",
+    "year": 2012,
+    "date": "2012-11-15",
+    "judge": "ELC",
+    "topics": [
+      "Land Law",
+      "Easements",
+      "Infrastructure",
+      "Compensation"
+    ],
+    "summary": {
+      "facts": "Dispute over wayleave and compensation for power lines across land used for port operations.",
+      "issues": [
+        "Whether wayleaves require registration",
+        "Compensation for injurious affection"
+      ],
+      "holding": "Statutory wayleaves must comply with land legislation; affected owners are entitled to compensation where rights are impaired.",
+      "ratio": "Private property rights under Article 40 require lawful acquisition of interests and fair compensation.",
+      "obiter": "Utilities must follow statutory procedures for wayleaves."
+    },
+    "full_text": "Environment and Land Court decision on wayleaves and compensation. Reinforces Article 40 protection of property and statutory compliance for infrastructure interests in land.",
+    "url": null,
+    "source": "local_corpus"
+  },
+  {
+    "id": "case-employment-redundancy",
+    "title": "Thomas De La Rue v David Opondo Omutelema",
+    "citation": "[2013] eKLR",
+    "court": "Court of Appeal",
+    "year": 2013,
+    "date": "2013-03-22",
+    "judge": "Court of Appeal",
+    "topics": [
+      "Employment Law",
+      "Redundancy",
+      "Unfair Termination"
+    ],
+    "summary": {
+      "facts": "Employee challenged termination on grounds of redundancy alleging lack of fair procedure and genuine operational need.",
+      "issues": [
+        "Genuine redundancy requirements under Employment Act",
+        "Fair procedure and selection criteria"
+      ],
+      "holding": "Redundancy must be genuine and conducted fairly, with notice and consultation; sham redundancy amounts to unfair termination.",
+      "ratio": "Section 40 Employment Act requires valid reason and fair process; courts examine substance over label.",
+      "obiter": "Compensation may include up to 12 months' wages."
+    },
+    "full_text": "Court of Appeal authority on redundancy. The employer must prove a genuine operational requirement and follow fair selection and notification procedures.",
+    "url": null,
+    "source": "local_corpus"
+  },
+  {
+    "id": "case-brain-republic-v-job-kipkorir-arap-chumba",
+    "title": "Republic v. Job Kipkorir Arap Chumba",
+    "citation": "[2023] eKLR",
+    "court": "High Court",
+    "year": 2023,
+    "date": null,
+    "judge": null,
+    "topics": [
+      "criminal law",
+      "murder",
+      "pretrial release",
+      "bail"
+    ],
+    "summary": {
+      "facts": "Application for pretrial release of the accused person charged with murder contrary to Section 203 as read with Section 204 of the Penal Code.",
+      "issues": [],
+      "holding": "Application for pretrial release of the accused person charged with murder contrary to Section 203 as read with Section 204 of the Penal Code.",
+      "ratio": "",
+      "obiter": ""
+    },
+    "full_text": "Application for pretrial release of the accused person charged with murder contrary to Section 203 as read with Section 204 of the Penal Code.",
+    "url": "https://www.kenyalaw.org/kl/search/#stq=Republic%20v.%20Job%20Kipkorir%20Arap%20Chumba&stp=1",
+    "source": "brain_metadata"
+  },
+  {
+    "id": "case-brain-safaricom-plc-v-commissioner-of-domestic-taxes",
+    "title": "Safaricom PLC v. Commissioner of Domestic Taxes",
+    "citation": "[2023] eKLR",
+    "court": "Tax Appeals Tribunal",
+    "year": 2023,
+    "date": null,
+    "judge": null,
+    "topics": [
+      "tax law",
+      "withholding tax",
+      "mobile money",
+      "Safaricom",
+      "digital economy"
+    ],
+    "summary": {
+      "facts": "Tax dispute concerning withholding tax on mobile money transfer services and the interpretation of Section 35(3) of the Income Tax Act.",
+      "issues": [],
+      "holding": "Tax dispute concerning withholding tax on mobile money transfer services and the interpretation of Section 35(3) of the Income Tax Act.",
+      "ratio": "",
+      "obiter": ""
+    },
+    "full_text": "Tax dispute concerning withholding tax on mobile money transfer services and the interpretation of Section 35(3) of the Income Tax Act.",
+    "url": "https://www.kenyalaw.org/kl/search/#stq=Safaricom%20PLC%20v.%20Commissioner%20of%20Domestic%20Taxes&stp=1",
+    "source": "brain_metadata"
+  },
+  {
+    "id": "case-brain-okiya-omtatah-okoiti-v-attorney-general",
+    "title": "Okiya Omtatah Okoiti v. Attorney General",
+    "citation": "[2023] eKLR",
+    "court": "High Court",
+    "year": 2023,
+    "date": null,
+    "judge": null,
+    "topics": [
+      "constitutional law",
+      "public interest litigation",
+      "finance act",
+      "taxation"
+    ],
+    "summary": {
+      "facts": "Public interest litigation challenging the constitutionality of the Finance Act 2023 amendments to the tax legislation.",
+      "issues": [],
+      "holding": "Public interest litigation challenging the constitutionality of the Finance Act 2023 amendments to the tax legislation.",
+      "ratio": "",
+      "obiter": ""
+    },
+    "full_text": "Public interest litigation challenging the constitutionality of the Finance Act 2023 amendments to the tax legislation.",
+    "url": "https://www.kenyalaw.org/kl/search/#stq=Okiya%20Omtatah%20Okoiti%20v.%20Attorney%20General&stp=1",
+    "source": "brain_metadata"
+  },
+  {
+    "id": "case-brain-kenya-national-commission-on-human-rights-v-attorney-general",
+    "title": "Kenya National Commission on Human Rights v. Attorney General",
+    "citation": "[2017] eKLR",
+    "court": "Supreme Court",
+    "year": 2017,
+    "date": null,
+    "judge": null,
+    "topics": [
+      "human rights",
+      "police custody",
+      "detention",
+      "fundamental rights"
+    ],
+    "summary": {
+      "facts": "Advisory opinion on the rights of suspects in police custody and the constitutionality of police detention without trial.",
+      "issues": [],
+      "holding": "Advisory opinion on the rights of suspects in police custody and the constitutionality of police detention without trial.",
+      "ratio": "",
+      "obiter": ""
+    },
+    "full_text": "Advisory opinion on the rights of suspects in police custody and the constitutionality of police detention without trial.",
+    "url": "https://www.kenyalaw.org/kl/search/#stq=Kenya%20National%20Commission%20on%20Human%20Rights%20v.%20Attorney%20General&stp=1",
+    "source": "brain_metadata"
+  },
+  {
+    "id": "case-brain-centre-for-rights-education-and-awareness-v-attorney-general",
+    "title": "Centre for Rights Education and Awareness v. Attorney General",
+    "citation": "[2017] eKLR",
+    "court": "High Court",
+    "year": 2017,
+    "date": null,
+    "judge": null,
+    "topics": [
+      "family law",
+      "succession",
+      "gender discrimination",
+      "women rights"
+    ],
+    "summary": {
+      "facts": "Constitutional petition challenging discriminatory provisions in the Succession Act as they affect widows and female children.",
+      "issues": [],
+      "holding": "Constitutional petition challenging discriminatory provisions in the Succession Act as they affect widows and female children.",
+      "ratio": "",
+      "obiter": ""
+    },
+    "full_text": "Constitutional petition challenging discriminatory provisions in the Succession Act as they affect widows and female children.",
+    "url": "https://www.kenyalaw.org/kl/search/#stq=Centre%20for%20Rights%20Education%20and%20Awareness%20v.%20Attorney%20General&stp=1",
+    "source": "brain_metadata"
+  },
+  {
+    "id": "case-brain-british-american-tobacco-v-cabinet-secretary-for-the-national-treasury",
+    "title": "British American Tobacco v. Cabinet Secretary for the National Treasury",
+    "citation": "[2019] eKLR",
+    "court": "High Court",
+    "year": 2019,
+    "date": null,
+    "judge": null,
+    "topics": [
+      "public health",
+      "tobacco regulation",
+      "plain packaging",
+      "consumer protection"
+    ],
+    "summary": {
+      "facts": "Challenge to the Public Health Act amendments imposing plain packaging requirements on tobacco products.",
+      "issues": [],
+      "holding": "Challenge to the Public Health Act amendments imposing plain packaging requirements on tobacco products.",
+      "ratio": "",
+      "obiter": ""
+    },
+    "full_text": "Challenge to the Public Health Act amendments imposing plain packaging requirements on tobacco products.",
+    "url": "https://www.kenyalaw.org/kl/search/#stq=British%20American%20Tobacco%20v.%20Cabinet%20Secretary%20for%20the%20National%20Treasury&stp=1",
+    "source": "brain_metadata"
+  },
+  {
+    "id": "case-brain-federation-of-women-lawyers-kenya-v-attorney-general",
+    "title": "Federation of Women Lawyers Kenya v. Attorney General",
+    "citation": "[2014] eKLR",
+    "court": "High Court",
+    "year": 2014,
+    "date": null,
+    "judge": null,
+    "topics": [
+      "marriage",
+      "child marriage",
+      "family law",
+      "children rights"
+    ],
+    "summary": {
+      "facts": "Constitutional challenge to provisions of the Marriage Act that permitted child marriage with parental consent.",
+      "issues": [],
+      "holding": "Constitutional challenge to provisions of the Marriage Act that permitted child marriage with parental consent.",
+      "ratio": "",
+      "obiter": ""
+    },
+    "full_text": "Constitutional challenge to provisions of the Marriage Act that permitted child marriage with parental consent.",
+    "url": "https://www.kenyalaw.org/kl/search/#stq=Federation%20of%20Women%20Lawyers%20Kenya%20v.%20Attorney%20General&stp=1",
+    "source": "brain_metadata"
+  },
+  {
+    "id": "case-brain-katiba-institute-v-attorney-general",
+    "title": "Katiba Institute v. Attorney General",
+    "citation": "[2022] eKLR",
+    "court": "High Court",
+    "year": 2022,
+    "date": null,
+    "judge": null,
+    "topics": [
+      "constitutional law",
+      "public participation",
+      "appointments",
+      "transparency"
+    ],
+    "summary": {
+      "facts": "Challenge to the appointment of Principal Secretaries without public participation and parliamentary vetting as required by the Constitution.",
+      "issues": [],
+      "holding": "Challenge to the appointment of Principal Secretaries without public participation and parliamentary vetting as required by the Constitution.",
+      "ratio": "",
+      "obiter": ""
+    },
+    "full_text": "Challenge to the appointment of Principal Secretaries without public participation and parliamentary vetting as required by the Constitution.",
+    "url": "https://www.kenyalaw.org/kl/search/#stq=Katiba%20Institute%20v.%20Attorney%20General&stp=1",
+    "source": "brain_metadata"
+  },
+  {
+    "id": "case-brain-mathew-mwangi-mutiso-v-iebc",
+    "title": "Mathew Mwangi Mutiso v. IEBC",
+    "citation": "[2023] eKLR",
+    "court": "High Court",
+    "year": 2023,
+    "date": null,
+    "judge": null,
+    "topics": [
+      "election law",
+      "gubernatorial election",
+      "Kiambu",
+      "electoral irregularities"
+    ],
+    "summary": {
+      "facts": "Election petition challenging the results of the gubernatorial election in Kiambu County for alleged irregularities and voter suppression.",
+      "issues": [],
+      "holding": "Election petition challenging the results of the gubernatorial election in Kiambu County for alleged irregularities and voter suppression.",
+      "ratio": "",
+      "obiter": ""
+    },
+    "full_text": "Election petition challenging the results of the gubernatorial election in Kiambu County for alleged irregularities and voter suppression.",
+    "url": "https://www.kenyalaw.org/kl/search/#stq=Mathew%20Mwangi%20Mutiso%20v.%20IEBC&stp=1",
+    "source": "brain_metadata"
+  },
+  {
+    "id": "case-brain-doctors-for-life-international-v-speaker-of-the-national-assembly",
+    "title": "Doctors for Life International v. Speaker of the National Assembly",
+    "citation": "[2006] ZACC 11",
+    "court": "Supreme Court",
+    "year": 2006,
+    "date": null,
+    "judge": null,
+    "topics": [
+      "separation of powers",
+      "judicial review",
+      "legislative process",
+      "constitutional interpretation"
+    ],
+    "summary": {
+      "facts": "Landmark case on the doctrine of separation of powers and the role of the judiciary in reviewing legislative and executive action.",
+      "issues": [],
+      "holding": "Landmark case on the doctrine of separation of powers and the role of the judiciary in reviewing legislative and executive action.",
+      "ratio": "",
+      "obiter": ""
+    },
+    "full_text": "Landmark case on the doctrine of separation of powers and the role of the judiciary in reviewing legislative and executive action.",
+    "url": "https://www.kenyalaw.org/kl/search/#stq=Doctors%20for%20Life%20International%20v.%20Speaker%20of%20the%20National%20Assembly&stp=1",
+    "source": "brain_metadata"
+  },
+  {
+    "id": "case-brain-standard-chartered-bank-v-kenya-revenue-authority",
+    "title": "Standard Chartered Bank v. Kenya Revenue Authority",
+    "citation": "[2022] eKLR",
+    "court": "Tax Appeals Tribunal",
+    "year": 2022,
+    "date": null,
+    "judge": null,
+    "topics": [
+      "tax law",
+      "corporation tax",
+      "double taxation",
+      "foreign income"
+    ],
+    "summary": {
+      "facts": "Dispute over the assessment of corporation tax on foreign-sourced income and the application of double taxation agreements.",
+      "issues": [],
+      "holding": "Dispute over the assessment of corporation tax on foreign-sourced income and the application of double taxation agreements.",
+      "ratio": "",
+      "obiter": ""
+    },
+    "full_text": "Dispute over the assessment of corporation tax on foreign-sourced income and the application of double taxation agreements.",
+    "url": "https://www.kenyalaw.org/kl/search/#stq=Standard%20Chartered%20Bank%20v.%20Kenya%20Revenue%20Authority&stp=1",
+    "source": "brain_metadata"
+  },
+  {
+    "id": "case-brain-wiper-democratic-movement-v-jubilee-party",
+    "title": "Wiper Democratic Movement v. Jubilee Party",
+    "citation": "[2022] eKLR",
+    "court": "High Court",
+    "year": 2022,
+    "date": null,
+    "judge": null,
+    "topics": [
+      "political party law",
+      "coalition agreement",
+      "party tickets",
+      "elections"
+    ],
+    "summary": {
+      "facts": "Dispute arising from a coalition agreement and the allocation of party tickets for the 2022 general elections.",
+      "issues": [],
+      "holding": "Dispute arising from a coalition agreement and the allocation of party tickets for the 2022 general elections.",
+      "ratio": "",
+      "obiter": ""
+    },
+    "full_text": "Dispute arising from a coalition agreement and the allocation of party tickets for the 2022 general elections.",
+    "url": "https://www.kenyalaw.org/kl/search/#stq=Wiper%20Democratic%20Movement%20v.%20Jubilee%20Party&stp=1",
+    "source": "brain_metadata"
+  },
+  {
+    "id": "case-brain-republic-v-chief-magistrate-s-court-at-milimani",
+    "title": "Republic v. Chief Magistrate's Court at Milimani",
+    "citation": "[2023] eKLR",
+    "court": "High Court",
+    "year": 2023,
+    "date": null,
+    "judge": null,
+    "topics": [
+      "judicial review",
+      "certiorari",
+      "land law",
+      "magistrate court"
+    ],
+    "summary": {
+      "facts": "Judicial review application seeking orders of certiorari to quash a decision of the Chief Magistrate's Court in a land dispute.",
+      "issues": [],
+      "holding": "Judicial review application seeking orders of certiorari to quash a decision of the Chief Magistrate's Court in a land dispute.",
+      "ratio": "",
+      "obiter": ""
+    },
+    "full_text": "Judicial review application seeking orders of certiorari to quash a decision of the Chief Magistrate's Court in a land dispute.",
+    "url": "https://www.kenyalaw.org/kl/search/#stq=Republic%20v.%20Chief%20Magistrate%27s%20Court%20at%20Milimani&stp=1",
+    "source": "brain_metadata"
+  },
+  {
+    "id": "case-brain-nairobi-city-county-v-attorney-general",
+    "title": "Nairobi City County v. Attorney General",
+    "citation": "[2021] eKLR",
+    "court": "High Court",
+    "year": 2021,
+    "date": null,
+    "judge": null,
+    "topics": [
+      "devolution",
+      "revenue sharing",
+      "county government",
+      "Nairobi"
+    ],
+    "summary": {
+      "facts": "Constitutional dispute over the division of revenue between the national government and Nairobi City County Government.",
+      "issues": [],
+      "holding": "Constitutional dispute over the division of revenue between the national government and Nairobi City County Government.",
+      "ratio": "",
+      "obiter": ""
+    },
+    "full_text": "Constitutional dispute over the division of revenue between the national government and Nairobi City County Government.",
+    "url": "https://www.kenyalaw.org/kl/search/#stq=Nairobi%20City%20County%20v.%20Attorney%20General&stp=1",
+    "source": "brain_metadata"
+  },
+  {
+    "id": "case-brain-kenya-railways-corporation-v-federation-of-kenya-employers",
+    "title": "Kenya Railways Corporation v. Federation of Kenya Employers",
+    "citation": "[2020] eKLR",
+    "court": "Employment and Labour Relations Court",
+    "year": 2020,
+    "date": null,
+    "judge": null,
+    "topics": [
+      "employment law",
+      "retrenchment",
+      "labour relations",
+      "restructuring"
+    ],
+    "summary": {
+      "facts": "Labour dispute concerning the retrenchment of employees during the restructuring of Kenya Railways Corporation.",
+      "issues": [],
+      "holding": "Labour dispute concerning the retrenchment of employees during the restructuring of Kenya Railways Corporation.",
+      "ratio": "",
+      "obiter": ""
+    },
+    "full_text": "Labour dispute concerning the retrenchment of employees during the restructuring of Kenya Railways Corporation.",
+    "url": "https://www.kenyalaw.org/kl/search/#stq=Kenya%20Railways%20Corporation%20v.%20Federation%20of%20Kenya%20Employers&stp=1",
+    "source": "brain_metadata"
+  },
+  {
+    "id": "case-brain-societe-internationale-de-telecommunications-aeronautiques-v-kenya-revenue-autho",
+    "title": "Societe Internationale de Telecommunications Aeronautiques v. Kenya Revenue Authority",
+    "citation": "[2021] eKLR",
+    "court": "Tax Appeals Tribunal",
+    "year": 2021,
+    "date": null,
+    "judge": null,
+    "topics": [
+      "VAT",
+      "tax law",
+      "aeronautical services",
+      "taxable supply"
+    ],
+    "summary": {
+      "facts": "Dispute on whether the provision of aeronautical telecommunications services constitutes a taxable supply under the VAT Act.",
+      "issues": [],
+      "holding": "Dispute on whether the provision of aeronautical telecommunications services constitutes a taxable supply under the VAT Act.",
+      "ratio": "",
+      "obiter": ""
+    },
+    "full_text": "Dispute on whether the provision of aeronautical telecommunications services constitutes a taxable supply under the VAT Act.",
+    "url": "https://www.kenyalaw.org/kl/search/#stq=Societe%20Internationale%20de%20Telecommunications%20Aeronautiques%20v.%20Kenya%20Revenue%20Authority&stp=1",
+    "source": "brain_metadata"
+  },
+  {
+    "id": "case-brain-mombasa-cement-ltd-v-county-government-of-mombasa",
+    "title": "Mombasa Cement Ltd v. County Government of Mombasa",
+    "citation": "[2022] eKLR",
+    "court": "High Court",
+    "year": 2022,
+    "date": null,
+    "judge": null,
+    "topics": [
+      "county government",
+      "taxation",
+      "levies",
+      "industrial regulation"
+    ],
+    "summary": {
+      "facts": "Challenge to county government levies on industrial operations and the constitutional limits of county taxation powers.",
+      "issues": [],
+      "holding": "Challenge to county government levies on industrial operations and the constitutional limits of county taxation powers.",
+      "ratio": "",
+      "obiter": ""
+    },
+    "full_text": "Challenge to county government levies on industrial operations and the constitutional limits of county taxation powers.",
+    "url": "https://www.kenyalaw.org/kl/search/#stq=Mombasa%20Cement%20Ltd%20v.%20County%20Government%20of%20Mombasa&stp=1",
+    "source": "brain_metadata"
+  },
+  {
+    "id": "case-brain-oxygen-house-limited-v-attorney-general",
+    "title": "Oxygen House Limited v. Attorney General",
+    "citation": "[2023] eKLR",
+    "court": "High Court",
+    "year": 2023,
+    "date": null,
+    "judge": null,
+    "topics": [
+      "environmental law",
+      "waste management",
+      "EMCA",
+      "environmental protection"
+    ],
+    "summary": {
+      "facts": "Constitutional petition challenging the constitutionality of the Environmental Management and Coordination Act provisions on waste disposal.",
+      "issues": [],
+      "holding": "Constitutional petition challenging the constitutionality of the Environmental Management and Coordination Act provisions on waste disposal.",
+      "ratio": "",
+      "obiter": ""
+    },
+    "full_text": "Constitutional petition challenging the constitutionality of the Environmental Management and Coordination Act provisions on waste disposal.",
+    "url": "https://www.kenyalaw.org/kl/search/#stq=Oxygen%20House%20Limited%20v.%20Attorney%20General&stp=1",
+    "source": "brain_metadata"
+  },
+  {
+    "id": "case-brain-maurice-onyango-oluoch-v-nairobi-city-water-sewerage-company",
+    "title": "Maurice Onyango Oluoch v. Nairobi City Water & Sewerage Company",
+    "citation": "[2019] eKLR",
+    "court": "High Court",
+    "year": 2019,
+    "date": null,
+    "judge": null,
+    "topics": [
+      "water rights",
+      "public utility",
+      "consumer protection",
+      "Nairobi"
+    ],
+    "summary": {
+      "facts": "Class action suit against Nairobi City Water & Sewerage Company for chronic water shortages and illegal disconnections.",
+      "issues": [],
+      "holding": "Class action suit against Nairobi City Water & Sewerage Company for chronic water shortages and illegal disconnections.",
+      "ratio": "",
+      "obiter": ""
+    },
+    "full_text": "Class action suit against Nairobi City Water & Sewerage Company for chronic water shortages and illegal disconnections.",
+    "url": "https://www.kenyalaw.org/kl/search/#stq=Maurice%20Onyango%20Oluoch%20v.%20Nairobi%20City%20Water%20%26%20Sewerage%20Company&stp=1",
+    "source": "brain_metadata"
+  },
+  {
+    "id": "case-brain-communications-authority-of-kenya-v-kenya-human-rights-commission",
+    "title": "Communications Authority of Kenya v. Kenya Human Rights Commission",
+    "citation": "[2020] eKLR",
+    "court": "High Court",
+    "year": 2020,
+    "date": null,
+    "judge": null,
+    "topics": [
+      "privacy",
+      "surveillance",
+      "intelligence services",
+      "communications"
+    ],
+    "summary": {
+      "facts": "Dispute over the constitutionality of government surveillance powers under the National Intelligence Service Act.",
+      "issues": [],
+      "holding": "Dispute over the constitutionality of government surveillance powers under the National Intelligence Service Act.",
+      "ratio": "",
+      "obiter": ""
+    },
+    "full_text": "Dispute over the constitutionality of government surveillance powers under the National Intelligence Service Act.",
+    "url": "https://www.kenyalaw.org/kl/search/#stq=Communications%20Authority%20of%20Kenya%20v.%20Kenya%20Human%20Rights%20Commission&stp=1",
+    "source": "brain_metadata"
+  },
+  {
+    "id": "case-brain-kenya-airports-authority-v-kaa-workers-union",
+    "title": "Kenya Airports Authority v. KAA Workers Union",
+    "citation": "[2021] eKLR",
+    "court": "Employment and Labour Relations Court",
+    "year": 2021,
+    "date": null,
+    "judge": null,
+    "topics": [
+      "employment law",
+      "privatization",
+      "JKIA",
+      "labour relations"
+    ],
+    "summary": {
+      "facts": "Labour dispute arising from the privatization of JKIA operations and its effect on employee terms and conditions.",
+      "issues": [],
+      "holding": "Labour dispute arising from the privatization of JKIA operations and its effect on employee terms and conditions.",
+      "ratio": "",
+      "obiter": ""
+    },
+    "full_text": "Labour dispute arising from the privatization of JKIA operations and its effect on employee terms and conditions.",
+    "url": "https://www.kenyalaw.org/kl/search/#stq=Kenya%20Airports%20Authority%20v.%20KAA%20Workers%20Union&stp=1",
+    "source": "brain_metadata"
+  }
+]

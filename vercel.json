@@ -1,14 +1,22 @@
 {
   "version": 2,
-  "buildCommand": "pip install -r requirements.txt",
-  "devCommand": "uvicorn api.backend.main:app --reload --host 0.0.0.0 --port 8000",
-  "installCommand": "pip install -r requirements.txt",
   "framework": null,
+  "installCommand": "pip install -r requirements.txt",
+  "buildCommand": "echo 'static + python function'",
+  "functions": {
+    "api/index.py": {
+      "maxDuration": 60,
+      "memory": 1024
+    }
+  },
   "builds": [
     {
-      "src": "api/backend/main.py",
+      "src": "api/index.py",
       "use": "@vercel/python",
-      "config": { "maxDuration": 60 }
+      "config": {
+        "maxDuration": 60,
+        "maxLambdaSize": "50mb"
+      }
     },
     {
       "src": "public/**",
@@ -16,49 +24,32 @@
     }
   ],
   "routes": [
+    { "src": "/api/index.py", "dest": "/api/index.py" },
+    { "src": "/api/v1/(.*)", "dest": "/api/index.py" },
+    { "src": "/health", "dest": "/api/index.py" },
+    { "src": "/ready", "dest": "/api/index.py" },
+    { "src": "/debug-imports", "dest": "/api/index.py" },
+    { "src": "/metrics", "dest": "/api/index.py" },
+    { "src": "/docs", "dest": "/api/index.py" },
+    { "src": "/app", "dest": "/public/app.html" },
+    { "src": "/login", "dest": "/public/app.html" },
+    { "src": "/css/(.*)", "dest": "/public/css/$1" },
+    { "src": "/js/(.*)", "dest": "/public/js/$1" },
+    { "src": "/(.*\\.(css|js|png|jpg|jpeg|svg|ico|json|txt|woff|woff2|ttf|eot|html|webp|map))", "dest": "/public/$1" },
+    { "src": "/", "dest": "/public/app.html" }
+  ],
+  "headers": [
     {
-      "src": "/api/v1/(.*)",
-      "dest": "/api/backend/main.py"
+      "source": "/css/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=86400" }
+      ]
     },
     {
-      "src": "/(.*\\.(css|js|png|jpg|svg|ico|json|txt|woff|woff2|ttf|eot|html))",
-      "dest": "/public/$1"
-    },
-    {
-      "src": "/health",
-      "dest": "/api/backend/main.py"
-    },
-    {
-      "src": "/debug-imports",
-      "dest": "/api/backend/main.py"
-    },
-    {
-      "src": "/ready",
-      "dest": "/api/backend/main.py"
-    },
-    {
-      "src": "/metrics",
-      "dest": "/api/backend/main.py"
-    },
-    {
-      "src": "/docs",
-      "dest": "/api/backend/main.py"
-    },
-    {
-      "src": "/login",
-      "dest": "/public/login.html"
-    },
-    {
-      "src": "/onboarding",
-      "dest": "/public/onboarding.html"
-    },
-    {
-      "src": "/app",
-      "dest": "/public/app.html"
-    },
-    {
-      "src": "/",
-      "dest": "/public/app.html"
+      "source": "/js/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=86400" }
+      ]
     }
   ]
 }

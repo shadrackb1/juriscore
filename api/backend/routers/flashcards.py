@@ -87,6 +87,29 @@ async def update_card(card_id: str, payload: FlashcardUpdate, current_user: User
     )
 
 
+@router.get("/decks/{deck_id}/cards", response_model=List[FlashcardResponse])
+async def list_cards(deck_id: str, current_user: User = Depends(get_current_user), session: AsyncSession = Depends(get_session)):
+    result = await session.execute(select(FlashcardDeck).where(FlashcardDeck.id == deck_id, FlashcardDeck.user_id == current_user.id))
+    deck = result.scalar_one_or_none()
+    if not deck:
+        raise HTTPException(status_code=404, detail="Deck not found")
+    result = await session.execute(select(Flashcard).where(Flashcard.deck_id == deck_id))
+    cards = result.scalars().all()
+    return [
+        FlashcardResponse(
+            id=c.id,
+            deck_id=c.deck_id,
+            front=c.front,
+            back=c.back,
+            interval=c.interval,
+            ease_factor=c.ease_factor,
+            next_review=c.next_review,
+            created_at=c.created_at,
+        )
+        for c in cards
+    ]
+
+
 @router.get("/decks/{deck_id}/due", response_model=List[FlashcardResponse])
 async def due_cards(deck_id: str, current_user: User = Depends(get_current_user), session: AsyncSession = Depends(get_session)):
     result = await session.execute(select(FlashcardDeck).where(FlashcardDeck.id == deck_id, FlashcardDeck.user_id == current_user.id))

@@ -16,6 +16,7 @@ services:
       OPENAI_API_KEY: ${OPENAI_API_KEY}
       CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:3000,http://localhost:5173}
       LOG_LEVEL: ${LOG_LEVEL:-INFO}
+      AUTO_CRAWL: ${AUTO_CRAWL:-false}
     depends_on:
       db:
         condition: service_healthy

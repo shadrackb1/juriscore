@@ -1,0 +1,7 @@
+[
+  {"id": "lr-kek-2024", "title": "Kenya Law Reports 2024 — Selected Supreme Court Decisions", "series": "Kenya Law Reports", "year": 2024, "publisher": "National Council for Law Reporting", "summary": "Bound volume of selected Supreme Court and Court of Appeal authorities with professional headnotes.", "citation_format": "[Year] KLR"},
+  {"id": "lr-kek-2023", "title": "Kenya Law Reports 2023 — High Court Constitutional Bench", "series": "Kenya Law Reports", "year": 2023, "publisher": "National Council for Law Reporting", "summary": "Constitutional Bench decisions including Article 24 limitation analysis and devolution disputes.", "citation_format": "[Year] KLR"},
+  {"id": "lr-elc-2024", "title": "ELC Law Reports — Land and Environment 2024", "series": "ELC Reports", "year": 2024, "publisher": "Judiciary of Kenya", "summary": "Selected Environment and Land Court judgments on compulsory acquisition, community land and planning.", "citation_format": "ELC"},
+  {"id": "lr-elrc-2024", "title": "ELRC Law Reports — Employment 2024", "series": "ELRC Reports", "year": 2024, "publisher": "Judiciary of Kenya", "summary": "Employment and Labour Relations Court authorities on unfair termination, redundancy and trade unions.", "citation_format": "ELRC"},
+  {"id": "lr-eklr-index", "title": "eKLR Subject Index", "series": "Electronic Kenya Law Reports", "year": 2025, "publisher": "National Council for Law Reporting", "summary": "Subject and statute index for electronic Kenya Law Reports used for citation and research navigation.", "citation_format": "eKLR"}
+]

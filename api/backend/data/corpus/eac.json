@@ -1,0 +1,14 @@
+[
+  {"id": "eac-001", "title": "EAC Common Market Protocol", "year": 2009, "category": "Protocol", "summary": "Free movement of persons, workers, services and capital among Partner States.", "topic": "Common market"},
+  {"id": "eac-002", "title": "EAC Customs Union Protocol", "year": 2004, "category": "Protocol", "summary": "Common external tariff, elimination of internal tariffs, and rules of origin within the Community.", "topic": "Customs"},
+  {"id": "eac-003", "title": "EAC Monetary Union Protocol", "year": 2013, "category": "Protocol", "summary": "Framework for eventual single currency, macroeconomic convergence criteria and East African Central Bank roadmap.", "topic": "Monetary union"},
+  {"id": "eac-004", "title": "East African Community Court of Justice — Rules of Procedure", "year": 2019, "category": "Rules", "summary": "Procedure for references from national courts, community actions, and staff disputes before the EACJ.", "topic": "EACJ"},
+  {"id": "eac-005", "title": "EAC Elimination of Non-Tariff Barriers Act", "year": 2017, "category": "Act", "summary": "Provides for identification, monitoring and elimination of NTBs to trade within the Community.", "topic": "Trade"},
+  {"id": "eac-006", "title": "Inter-University Council for East Africa Convention", "year": 2007, "category": "Convention", "summary": "Harmonisation of higher education standards and mutual recognition of qualifications.", "topic": "Education"},
+  {"id": "eac-007", "title": "EAC Treaty — Free Movement of Persons", "year": 1999, "category": "Treaty Provision", "summary": "Partner States undertake to adopt measures to achieve free movement of persons who are citizens of the Partner States.", "topic": "Movement of persons"},
+  {"id": "eac-008", "title": "East African Standards — Model Law on Competition", "year": 2015, "category": "Model Law", "summary": "Model competition framework intended for domestication by Partner States including Kenya's Competition Act alignment.", "topic": "Competition"},
+  {"id": "eac-009", "title": "EAC Health Protocol", "year": 2006, "category": "Protocol", "summary": "Cooperation on disease surveillance, medicines regulation and health systems strengthening.", "topic": "Health"},
+  {"id": "eac-010", "title": "EAC Disaster Risk Management Act", "year": 2006, "category": "Act", "summary": "Framework for prevention, preparedness and response to disasters across Partner States.", "topic": "Disaster management"},
+  {"id": "eac-011", "title": "EAC Trade and Investment Framework", "year": 2015, "category": "Framework", "summary": "Guidelines for investment climate reform and cross-border trade facilitation.", "topic": "Investment"},
+  {"id": "eac-012", "title": "EAC Conflict Management Protocol", "year": 2015, "category": "Protocol", "summary": "Peace and security architecture for mediation and conflict early warning in the region.", "topic": "Peace and security"}
+]

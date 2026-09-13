@@ -64,6 +64,19 @@ async def universal_search(
         all_results = []
         sources_used = []
 
+        # Layer 0: Independent local legal corpus (always available offline)
+        try:
+            from api.backend.services import corpus as local_corpus
+            corpus_hits = local_corpus.search_corpus(q, doc_type=doc_type, court=court, limit=limit)
+            if corpus_hits:
+                for r in corpus_hits:
+                    r["source"] = "local_corpus"
+                all_results.extend(corpus_hits)
+                sources_used.append("local_corpus")
+                logger.info(f"Local corpus returned {len(corpus_hits)} results for '{q}'")
+        except Exception as e:
+            logger.debug(f"Local corpus search failed: {e}")
+
         # Layer 1a: Vector search (semantic + keyword hybrid via zvec)
         try:
             from api.backend.services.vector_search import vector_search as zvec_search
@@ -108,16 +121,18 @@ async def universal_search(
             sources_used.append("brain")
             logger.info(f"Brain returned {brain_result['count']} results for '{q}'")
 
-        # Layer 3: Live KenyaLaw.org search (additional results from web)
-        try:
-            kenya_results = await search_kenyalaw(query=q, limit=limit)
-            if kenya_results.get("results"):
-                for r in kenya_results["results"]:
-                    r["source"] = "kenyalaw"
-                all_results.extend(kenya_results["results"])
-                sources_used.append("kenyalaw")
-        except Exception as e:
-            logger.warning(f"KenyaLaw search failed: {e}")
+        # Layer 3: Live KenyaLaw.org search — optional (independent mode skips outbound)
+        import os as _os
+        if _os.getenv("LIVE_KENYALAW", "").lower() in ("1", "true", "yes"):
+            try:
+                kenya_results = await search_kenyalaw(query=q, limit=limit)
+                if kenya_results.get("results"):
+                    for r in kenya_results["results"]:
+                        r["source"] = "kenyalaw"
+                    all_results.extend(kenya_results["results"])
+                    sources_used.append("kenyalaw")
+            except Exception as e:
+                logger.warning(f"KenyaLaw search failed: {e}")
 
         # Deduplicate by title
         seen_titles = set()

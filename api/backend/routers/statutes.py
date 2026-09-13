@@ -1,91 +1,110 @@
 from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy.ext.asyncio import AsyncSession
-from sqlalchemy import select, or_, and_
-from typing import Optional, List
-from api.backend.models.database import Statute
-from api.backend.models.schemas import StatuteResponse, StatuteSectionsQuery, StatuteSearchQuery
-from api.backend.services.scraper import scrape_statute
+from typing import Optional, List, Any
+from datetime import datetime
+from api.backend.services import corpus
 from api.backend.core import get_session
+from api.backend.models.database import Statute as DbStatute
+from sqlalchemy import select, or_, and_
 import logging
 
 logger = logging.getLogger("juriscore")
 router = APIRouter()
 
 
-@router.get("/", response_model=List[StatuteResponse])
-async def list_statutes(session: AsyncSession = Depends(get_session)):
-    result = await session.execute(select(Statute))
-    statutes = result.scalars().all()
-    return [
-        StatuteResponse(
-            id=s.id,
-            title=s.title,
-            citation=s.citation,
-            cap_number=s.cap_number,
-            amendments=s.amendments,
-            created_at=s.created_at,
-        )
-        for s in statutes
-    ]
+def _corpus_statute_to_api(s: dict) -> dict:
+    return {
+        "id": s.get("id"),
+        "title": s.get("title"),
+        "citation": s.get("citation"),
+        "cap_number": s.get("cap_number"),
+        "year": s.get("year"),
+        "summary": s.get("summary"),
+        "full_text": s.get("full_text") or "",
+        "sections": s.get("sections") or [],
+        "amendments": s.get("amendments") or [],
+        "source": "local_corpus",
+        "created_at": datetime.utcnow().isoformat(),
+    }
+
+
+@router.get("/")
+async def list_statutes(
+    q: Optional[str] = Query(None),
+    session: AsyncSession = Depends(get_session),
+):
+    """Statutes primarily from the independent local corpus, with DB merge."""
+    items = corpus.search_statutes(q) if q else corpus.get_statutes()
+    results = [_corpus_statute_to_api(s) for s in items]
+
+    # Merge any DB-only statutes
+    try:
+        stmt = select(DbStatute)
+        if q:
+            stmt = stmt.where(or_(DbStatute.title.ilike(f"%{q}%"), DbStatute.citation.ilike(f"%{q}%")))
+        db_rows = (await session.execute(stmt)).scalars().all()
+        seen = {r["id"] for r in results}
+        for s in db_rows:
+            if s.id not in seen:
+                results.append({
+                    "id": s.id,
+                    "title": s.title,
+                    "citation": s.citation,
+                    "cap_number": s.cap_number,
+                    "summary": None,
+                    "full_text": s.full_text or "",
+                    "sections": [],
+                    "amendments": s.amendments or [],
+                    "source": "database",
+                    "created_at": s.created_at.isoformat() if s.created_at else None,
+                })
+    except Exception as e:
+        logger.debug(f"DB statute merge skipped: {e}")
+
+    return results
 
 
 @router.get("/search")
 async def search_statutes(
     q: Optional[str] = Query(None),
     cap_number: Optional[str] = Query(None),
-    session: AsyncSession = Depends(get_session),
 ):
-    stmt = select(Statute)
-    conditions = []
-    if q:
-        conditions.append(or_(Statute.title.ilike(f"%{q}%"), Statute.citation.ilike(f"%{q}%")))
-    if cap_number:
-        conditions.append(Statute.cap_number == cap_number)
-    if conditions:
-        stmt = stmt.where(and_(*conditions))
-    result = await session.execute(stmt)
-    statutes = result.scalars().all()
+    items = corpus.search_statutes(q, cap_number=cap_number)
     return [
         {
-            "id": s.id,
-            "title": s.title,
-            "citation": s.citation,
-            "cap_number": s.cap_number,
+            "id": s.get("id"),
+            "title": s.get("title"),
+            "citation": s.get("citation"),
+            "cap_number": s.get("cap_number"),
+            "summary": s.get("summary"),
+            "source": "local_corpus",
         }
-        for s in statutes
+        for s in items
     ]
 
 
-@router.get("/{statute_id}", response_model=StatuteResponse)
-async def get_statute(statute_id: str, session: AsyncSession = Depends(get_session)):
-    result = await session.execute(select(Statute).where(Statute.id == statute_id))
-    statute = result.scalar_one_or_none()
-    if not statute:
+@router.get("/{statute_id}")
+async def get_statute(statute_id: str):
+    s = corpus.get_statute(statute_id)
+    if not s:
         raise HTTPException(status_code=404, detail="Statute not found")
-    return StatuteResponse(
-        id=statute.id,
-        title=statute.title,
-        citation=statute.citation,
-        cap_number=statute.cap_number,
-        amendments=statute.amendments,
-        created_at=statute.created_at,
-    )
+    return _corpus_statute_to_api(s)
 
 
 @router.get("/{statute_id}/sections")
-async def get_statute_sections(
-    statute_id: str,
-    q: Optional[str] = Query(None),
-    session: AsyncSession = Depends(get_session),
-):
-    result = await session.execute(select(Statute).where(Statute.id == statute_id))
-    statute = result.scalar_one_or_none()
-    if not statute:
+async def get_statute_sections(statute_id: str, q: Optional[str] = Query(None)):
+    s = corpus.get_statute(statute_id)
+    if not s:
         raise HTTPException(status_code=404, detail="Statute not found")
-    full_text = statute.full_text
+    sections = s.get("sections") or []
+    if not sections:
+        paragraphs = [p.strip() for p in (s.get("full_text") or "").split("\n\n") if p.strip()]
+        sections = [{"text": p} for p in paragraphs]
     if q:
-        sections = [p.strip() for p in full_text.split("\n\n") if q.lower() in p.lower()]
-        return {"statute_id": statute.id, "query": q, "sections": sections}
-    paragraphs = [p.strip() for p in full_text.split("\n\n") if p.strip()]
-    return {"statute_id": statute.id, "sections": paragraphs}
-
+        ql = q.lower()
+        sections = [
+            sec
+            for sec in sections
+            if ql in str(sec).lower() or ql in str(sec.get("text", "")).lower() or ql in str(sec.get("heading", "")).lower()
+        ]
+    return {"statute_id": statute_id, "title": s.get("title"), "sections": sections, "source": "local_corpus"}

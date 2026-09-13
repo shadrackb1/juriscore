@@ -15,6 +15,7 @@ except ImportError:
     import jwt
 
 from api.backend.models.database import async_session, User
+from api.backend.core import get_session
 from api.backend.models.schemas import (
     AuthLoginRequest,
     AuthSignupRequest,
@@ -62,11 +63,6 @@ def decode_token(token: str) -> dict:
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Invalid or expired token",
         )
-
-
-async def get_session():
-    async with async_session() as session:
-        yield session
 
 
 async def get_current_user(

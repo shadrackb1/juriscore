@@ -87,6 +87,7 @@ try:
         publications,
         chat,
         uploads,
+        catalog,
     )
 except Exception as e:
     _import_errors["routers"] = str(e)
@@ -367,12 +368,19 @@ async def lifespan(app: FastAPI):
     except Exception as e:
         logger.warning("Local database not loaded", error=str(e))
 
-    # Auto-start KenyaLaw.org crawler (resumes from last progress)
+    # Load independent local legal corpus
     try:
-        from api.backend.services.kenyalaw_crawler import start_full_crawl
+        from api.backend.services.corpus import load_corpus, stats as corpus_stats
+        load_corpus()
+        logger.info("Local legal corpus loaded", **corpus_stats())
+    except Exception as e:
+        logger.warning("Local legal corpus not loaded", error=str(e))
+
+    # Optional KenyaLaw.org crawler (off by default for local/dev startup)
+    try:
         import os
-        # Only auto-start if not on Vercel (serverless can't run long tasks)
-        if not os.getenv("VERCEL"):
+        if os.getenv("AUTO_CRAWL", "").lower() in ("1", "true", "yes") and not os.getenv("VERCEL"):
+            from api.backend.services.kenyalaw_crawler import start_full_crawl
             result = await start_full_crawl()
             logger.info(f"KenyaLaw crawler: {result['status']}")
     except Exception as e:
@@ -482,7 +490,42 @@ async def ready():
 
 @app.get("/", tags=["Root"])
 async def root():
-    return JSONResponse({"message": "Welcome to Juriscore API", "docs": "/api/v1/docs"})
+    """Serve the research workspace UI."""
+    from fastapi.responses import FileResponse
+    public = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "public"))
+    index = os.path.join(public, "app.html")
+    if os.path.exists(index):
+        return FileResponse(index)
+    return JSONResponse({"message": "Juriscore API", "docs": "/api/v1/docs"})
+
+
+@app.get("/app", tags=["Root"])
+async def app_ui():
+    from fastapi.responses import FileResponse
+    public = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "public"))
+    return FileResponse(os.path.join(public, "app.html"))
+
+
+@app.get("/login", tags=["Root"])
+async def login_ui():
+    from fastapi.responses import FileResponse
+    public = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "public"))
+    path = os.path.join(public, "login.html")
+    if os.path.exists(path):
+        return FileResponse(path)
+    return FileResponse(os.path.join(public, "app.html"))
+
+
+# Static assets (css, js, images)
+try:
+    from fastapi.staticfiles import StaticFiles
+    _public_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "public"))
+    if os.path.isdir(_public_dir):
+        app.mount("/static", StaticFiles(directory=_public_dir), name="static")
+        app.mount("/css", StaticFiles(directory=os.path.join(_public_dir, "css")), name="css")
+        app.mount("/js", StaticFiles(directory=os.path.join(_public_dir, "js")), name="js")
+except Exception as e:
+    logger.warning("Static mount failed", error=str(e))
 
 
 # ── Router Registration ──────────────────────────────────────────────────────
@@ -513,6 +556,7 @@ _router_specs = [
     ("publications", "publications", "Publications"),
     ("chat", "chat", "Chat"),
     ("uploads", "uploads", "Uploads"),
+    ("catalog", "corpus", "Local Legal Corpus"),
 ]
 for mod_name, prefix, tag in _router_specs:
     try:

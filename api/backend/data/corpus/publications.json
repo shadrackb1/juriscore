@@ -1,0 +1,190 @@
+[
+  {
+    "id": "pub-knla-01",
+    "title": "Kenya Law Reports — Weekly Bulletin",
+    "publisher": "National Council for Law Reporting",
+    "year": 2025,
+    "category": "Law Report",
+    "summary": "Curated digest of recent High Court, Court of Appeal and Supreme Court decisions with headnotes.",
+    "frequency": "Weekly"
+  },
+  {
+    "id": "pub-knla-02",
+    "title": "Kenya Law Reports — Monthly Digest",
+    "publisher": "National Council for Law Reporting",
+    "year": 2025,
+    "category": "Law Report",
+    "summary": "Monthly digest of selected judgments with subject indexes and legislation updates.",
+    "frequency": "Monthly"
+  },
+  {
+    "id": "pub-ealj-01",
+    "title": "East African Law Journal",
+    "publisher": "University of Nairobi School of Law",
+    "year": 2024,
+    "category": "Journal",
+    "summary": "Peer-reviewed articles on constitutional law, human rights, trade and regional integration.",
+    "frequency": "Biannual"
+  },
+  {
+    "id": "pub-klj-01",
+    "title": "Kenya Law Journal",
+    "publisher": "Law Society of Kenya",
+    "year": 2024,
+    "category": "Journal",
+    "summary": "Practitioner and academic writing on advocacy, ethics, and contemporary Kenyan jurisprudence.",
+    "frequency": "Quarterly"
+  },
+  {
+    "id": "pub-tract-01",
+    "title": "The Constitution of Kenya 2010 — Commentary for Students",
+    "publisher": "Juriscore Academic",
+    "year": 2025,
+    "category": "Study Material",
+    "summary": "Chapter-by-chapter student commentary with landmark cases and exam-style questions.",
+    "frequency": "Edition"
+  },
+  {
+    "id": "pub-tract-02",
+    "title": "Criminal Procedure in Kenya — Practitioner Handbook",
+    "publisher": "Juriscore Academic",
+    "year": 2024,
+    "category": "Study Material",
+    "summary": "Charge sheet drafting, bail applications, trial procedure and appeals checklist.",
+    "frequency": "Edition"
+  },
+  {
+    "id": "pub-tract-03",
+    "title": "Land Law in Kenya — Cases and Statutes",
+    "publisher": "Juriscore Academic",
+    "year": 2025,
+    "category": "Study Material",
+    "summary": "Selected Land Act, Land Registration Act and ELC authorities with problem questions.",
+    "frequency": "Edition"
+  },
+  {
+    "id": "pub-annual-01",
+    "title": "Judiciary Annual Report",
+    "publisher": "Judiciary of Kenya",
+    "year": 2024,
+    "category": "Annual Report",
+    "summary": "Caseload statistics, access to justice programmes, court construction and performance metrics.",
+    "frequency": "Annual"
+  },
+  {
+    "id": "pub-annual-02",
+    "title": "EACC Annual Report",
+    "publisher": "Ethics and Anti-Corruption Commission",
+    "year": 2024,
+    "category": "Annual Report",
+    "summary": "Corruption investigations, asset recovery, prevention programmes and national ethics survey.",
+    "frequency": "Annual"
+  },
+  {
+    "id": "pub-annual-03",
+    "title": "National Land Commission Annual Report",
+    "publisher": "National Land Commission",
+    "year": 2024,
+    "category": "Annual Report",
+    "summary": "Land administration, historical injustices, compulsory acquisition and county land management.",
+    "frequency": "Annual"
+  },
+  {
+    "id": "pub-bench-01",
+    "title": "Bench Bulletin — Environment and Land Court",
+    "publisher": "Judiciary of Kenya",
+    "year": 2025,
+    "category": "Bulletin",
+    "summary": "Practice directions, selected ELC rulings and case management updates.",
+    "frequency": "Quarterly"
+  },
+  {
+    "id": "pub-commission-01",
+    "title": "Commission on Administrative Justice (Ombudsman) Decisions Digest",
+    "publisher": "CAJ",
+    "year": 2024,
+    "category": "Commission Report",
+    "summary": "Maladministration findings against public entities and recommended remedies under Article 59(4).",
+    "frequency": "Annual"
+  },
+  {
+    "id": "pub-brain-the-impact-of-devolution-on-service-delivery-in-kenya",
+    "title": "The Impact of Devolution on Service Delivery in Kenya",
+    "publisher": "Legal scholarship",
+    "year": 2023,
+    "category": "Article",
+    "summary": "An analysis of how devolution under the 2010 Constitution has affected service delivery at the county level.",
+    "frequency": "Article",
+    "source": "brain_metadata"
+  },
+  {
+    "id": "pub-brain-environmental-governance-in-kenya-challenges-and-opportunities",
+    "title": "Environmental Governance in Kenya: Challenges and Opportunities",
+    "publisher": "Legal scholarship",
+    "year": 2022,
+    "category": "Article",
+    "summary": "A review of Kenya's environmental governance framework under the EMCA and NEMA's effectiveness.",
+    "frequency": "Article",
+    "source": "brain_metadata"
+  },
+  {
+    "id": "pub-brain-digital-rights-and-data-protection-in-kenya",
+    "title": "Digital Rights and Data Protection in Kenya",
+    "publisher": "Legal scholarship",
+    "year": 2023,
+    "category": "Article",
+    "summary": "An examination of the Data Protection Act 2019 and its implications for digital rights in Kenya.",
+    "frequency": "Article",
+    "source": "brain_metadata"
+  },
+  {
+    "id": "pub-brain-gender-based-violence-and-the-law-in-kenya",
+    "title": "Gender-Based Violence and the Law in Kenya",
+    "publisher": "Legal scholarship",
+    "year": 2023,
+    "category": "Article",
+    "summary": "A legal analysis of gender-based violence legislation and enforcement in Kenya.",
+    "frequency": "Article",
+    "source": "brain_metadata"
+  },
+  {
+    "id": "pub-brain-tax-justice-and-the-informal-economy-in-kenya",
+    "title": "Tax Justice and the Informal Economy in Kenya",
+    "publisher": "Legal scholarship",
+    "year": 2022,
+    "category": "Article",
+    "summary": "An exploration of the challenges of taxing Kenya's large informal economy sector.",
+    "frequency": "Article",
+    "source": "brain_metadata"
+  },
+  {
+    "id": "pub-brain-constitutional-interpretation-and-the-role-of-the-judiciary",
+    "title": "Constitutional Interpretation and the Role of the Judiciary",
+    "publisher": "Legal scholarship",
+    "year": 2023,
+    "category": "Article",
+    "summary": "A study of constitutional interpretation methodologies employed by Kenyan courts.",
+    "frequency": "Article",
+    "source": "brain_metadata"
+  },
+  {
+    "id": "pub-brain-land-rights-and-historical-injustice-in-kenya",
+    "title": "Land Rights and Historical Injustice in Kenya",
+    "publisher": "Legal scholarship",
+    "year": 2022,
+    "category": "Article",
+    "summary": "An analysis of the National Land Commission's efforts to address historical land injustices.",
+    "frequency": "Article",
+    "source": "brain_metadata"
+  },
+  {
+    "id": "pub-brain-criminal-justice-reform-in-kenya-achievements-and-challenges",
+    "title": "Criminal Justice Reform in Kenya: Achievements and Challenges",
+    "publisher": "Legal scholarship",
+    "year": 2023,
+    "category": "Article",
+    "summary": "A comprehensive review of criminal justice reform initiatives in Kenya since 2010.",
+    "frequency": "Article",
+    "source": "brain_metadata"
+  }
+]

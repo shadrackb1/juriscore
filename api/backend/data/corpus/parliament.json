@@ -1,0 +1,243 @@
+[
+  {
+    "id": "par-bill-001",
+    "title": "Business Laws (Amendment) Bill 2025",
+    "house": "National Assembly",
+    "status": "Second Reading",
+    "sponsor": "Committee on Finance and Planning",
+    "summary": "Amends multiple business statutes to simplify company registration, reduce compliance cost for SMEs, and align insolvency timelines.",
+    "date": "2025-06-12",
+    "topics": [
+      "Companies",
+      "Business regulation"
+    ]
+  },
+  {
+    "id": "par-bill-002",
+    "title": "County Governments (Amendment) Bill 2025",
+    "house": "Senate",
+    "status": "Committee Stage",
+    "sponsor": "Senate Majority",
+    "summary": "Strengthens county oversight, public participation at county level, and intergovernmental revenue transfer reporting.",
+    "date": "2025-07-03",
+    "topics": [
+      "Devolution",
+      "County governance"
+    ]
+  },
+  {
+    "id": "par-bill-003",
+    "title": "Higher Education Loans Board (Amendment) Bill 2025",
+    "house": "National Assembly",
+    "status": "First Reading",
+    "sponsor": "Ministry of Education",
+    "summary": "Revises HELB repayment thresholds, interest relief for public servants in hardship areas, and recovery powers.",
+    "date": "2025-08-01",
+    "topics": [
+      "Education",
+      "Student finance"
+    ]
+  },
+  {
+    "id": "par-bill-004",
+    "title": "Climate Change (Amendment) Bill 2025",
+    "house": "National Assembly",
+    "status": "Third Reading",
+    "sponsor": "Ministry of Environment",
+    "summary": "Updates carbon markets regulation, county climate funds, and reporting under the Paris Agreement.",
+    "date": "2025-05-20",
+    "topics": [
+      "Climate",
+      "Environment"
+    ]
+  },
+  {
+    "id": "par-hansard-001",
+    "title": "National Assembly Hansard — Budget Policy Statement Debate",
+    "house": "National Assembly",
+    "status": "Published",
+    "sponsor": "Official Reporters",
+    "summary": "Full debate extract on the 2025/26 Budget Policy Statement including health, education and infrastructure allocations.",
+    "date": "2025-02-13",
+    "topics": [
+      "Budget",
+      "Public finance"
+    ]
+  },
+  {
+    "id": "par-hansard-002",
+    "title": "Senate Hansard — County Allocation of Revenue",
+    "house": "Senate",
+    "status": "Published",
+    "sponsor": "Official Reporters",
+    "summary": "Debate on equitable share formula and conditional grants to counties.",
+    "date": "2025-03-06",
+    "topics": [
+      "Revenue allocation",
+      "Senate"
+    ]
+  },
+  {
+    "id": "par-motion-001",
+    "title": "Motion on Review of University Funding Model",
+    "house": "National Assembly",
+    "status": "Adopted",
+    "sponsor": "Member for Gatundu South",
+    "summary": "Calls on the Ministry to publish transparent bands for the new university funding model and protect vulnerable students.",
+    "date": "2025-04-09",
+    "topics": [
+      "Higher education",
+      "Funding"
+    ]
+  },
+  {
+    "id": "par-committee-001",
+    "title": "Departmental Committee on Justice Report — Judiciary Budget",
+    "house": "National Assembly",
+    "status": "Tabled",
+    "sponsor": "Departmental Committee on Justice and Legal Affairs",
+    "summary": "Report on Judiciary funding, case backlog, and court infrastructure needs.",
+    "date": "2025-05-28",
+    "topics": [
+      "Judiciary",
+      "Budget"
+    ]
+  },
+  {
+    "id": "par-question-001",
+    "title": "Question: Status of Lands Digitization Programme",
+    "house": "National Assembly",
+    "status": "Answered",
+    "sponsor": "Member for Kibwezi West",
+    "summary": "Cabinet Secretary for Lands responds on progress of national land records digitization and county roll-out schedule.",
+    "date": "2025-06-19",
+    "topics": [
+      "Lands",
+      "Digital government"
+    ]
+  },
+  {
+    "id": "par-pbo-001",
+    "title": "PBO Analysis: Fiscal Sustainability of County Wage Bill",
+    "house": "Parliamentary Budget Office",
+    "status": "Published",
+    "sponsor": "PBO",
+    "summary": "Independent analysis of county wage bill trends, own-source revenue, and recommendations for the Division of Revenue Bill.",
+    "date": "2025-04-30",
+    "topics": [
+      "Public finance",
+      "Counties"
+    ]
+  },
+  {
+    "id": "par-brain-the-protection-of-personal-data-bill-2019",
+    "title": "The Protection of Personal Data Bill, 2019",
+    "house": "National Assembly",
+    "status": "enacted",
+    "sponsor": "",
+    "summary": "A bill to provide for the regulation of processing of personal data and for connected purposes.",
+    "date": 2019,
+    "topics": [
+      "data protection",
+      "personal data",
+      "privacy",
+      "ODPC"
+    ],
+    "source": "brain_metadata"
+  },
+  {
+    "id": "par-brain-the-public-interest-disclosure-whistleblower-protection-bill-2022",
+    "title": "The Public Interest Disclosure (Whistleblower Protection) Bill, 2022",
+    "house": "National Assembly",
+    "status": "pending",
+    "sponsor": "",
+    "summary": "A bill to provide for the protection of persons who disclose information in the public interest.",
+    "date": 2022,
+    "topics": [
+      "whistleblower protection",
+      "public interest disclosure",
+      "anti-corruption"
+    ],
+    "source": "brain_metadata"
+  },
+  {
+    "id": "par-brain-the-cybercrimes-amendment-bill-2023",
+    "title": "The Cybercrimes (Amendment) Bill, 2023",
+    "house": "National Assembly",
+    "status": "pending",
+    "sponsor": "",
+    "summary": "A bill to amend the Cybercrimes Act 2018 to address emerging online threats and strengthen digital security.",
+    "date": 2023,
+    "topics": [
+      "cybercrime",
+      "digital security",
+      "online threats",
+      "amendment"
+    ],
+    "source": "brain_metadata"
+  },
+  {
+    "id": "par-brain-the-community-land-amendment-bill-2023",
+    "title": "The Community Land (Amendment) Bill, 2023",
+    "house": "National Assembly",
+    "status": "pending",
+    "sponsor": "",
+    "summary": "A bill to amend the Community Land Act 2016 to strengthen community land rights and governance.",
+    "date": 2023,
+    "topics": [
+      "community land",
+      "land rights",
+      "amendment",
+      "indigenous rights"
+    ],
+    "source": "brain_metadata"
+  },
+  {
+    "id": "par-brain-the-anti-money-laundering-amendment-bill-2022",
+    "title": "The Anti-Money Laundering (Amendment) Bill, 2022",
+    "house": "National Assembly",
+    "status": "enacted",
+    "sponsor": "",
+    "summary": "A bill to amend the Proceeds of Crime and Anti-Money Laundering Act 2009.",
+    "date": 2022,
+    "topics": [
+      "money laundering",
+      "anti-money laundering",
+      "financial crime",
+      "AML"
+    ],
+    "source": "brain_metadata"
+  },
+  {
+    "id": "par-brain-the-national-housing-amendment-bill-2023",
+    "title": "The National Housing (Amendment) Bill, 2023",
+    "house": "National Assembly",
+    "status": "pending",
+    "sponsor": "",
+    "summary": "A bill to amend the National Housing and Development Act to promote affordable housing.",
+    "date": 2023,
+    "topics": [
+      "housing",
+      "affordable housing",
+      "housing policy",
+      "amendment"
+    ],
+    "source": "brain_metadata"
+  },
+  {
+    "id": "par-brain-the-public-finance-management-amendment-bill-2023",
+    "title": "The Public Finance Management (Amendment) Bill, 2023",
+    "house": "National Assembly",
+    "status": "pending",
+    "sponsor": "",
+    "summary": "A bill to amend the Public Finance Management Act 2012 to strengthen fiscal responsibility.",
+    "date": 2023,
+    "topics": [
+      "public finance",
+      "fiscal policy",
+      "government spending",
+      "amendment"
+    ],
+    "source": "brain_metadata"
+  }
+]

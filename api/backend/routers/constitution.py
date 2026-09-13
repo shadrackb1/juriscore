@@ -268,8 +268,22 @@ Article 67 - National Land Commission
 
 
 def _get_constitution_text() -> str:
-    """Get constitution text with fallback chain: brain → DB → hardcoded."""
-    # Try brain first
+    """Get constitution text with fallback chain: local corpus → brain → hardcoded."""
+    try:
+        from api.backend.services import corpus as local_corpus
+        arts = local_corpus.get_constitution_articles()
+        if arts:
+            parts = []
+            for a in arts:
+                header = f"Article {a.get('article_num')} - {a.get('title') or ''}"
+                if a.get("chapter") and (not parts or parts[-1] != a["chapter"]):
+                    parts.append(str(a["chapter"]).upper())
+                parts.append(header)
+                parts.append(a.get("content") or "")
+            return "\n\n".join(parts)
+    except Exception as e:
+        logger.warning(f"Corpus constitution load failed: {e}")
+
     try:
         brain_const = brain_get_constitution()
         if brain_const and brain_const.get("full_text"):
@@ -277,36 +291,45 @@ def _get_constitution_text() -> str:
     except Exception as e:
         logger.warning(f"Brain constitution lookup failed: {e}")
 
-    # Try DB
-    try:
-        from api.backend.models.database import Statute
-        from api.backend.core import get_session
-        # Can't use async here, so just return hardcoded
-    except Exception:
-        pass
-
-    # Hardcoded fallback (always works)
     return CONSTITUTION_FULL_TEXT
 
 
+def _corpus_articles():
+    from api.backend.services import corpus as local_corpus
+    arts = local_corpus.get_constitution_articles()
+    if arts:
+        return arts
+    return []
+
+
 @router.get("/")
-async def get_constitution(session: AsyncSession = Depends(get_session)):
-    from api.backend.models.database import Statute
-    result = await session.execute(select(Statute).where(Statute.citation.ilike("%Constitution%")).limit(1))
-    statute = result.scalar_one_or_none()
-    if statute:
-        return {"id": statute.id, "title": statute.title, "full_text": statute.full_text}
-
-    # Brain first, then hardcoded
-    brain = brain_get_constitution()
-    if brain:
-        return brain
-
-    return {"title": "Constitution of Kenya, 2010", "full_text": CONSTITUTION_FULL_TEXT}
+async def get_constitution():
+    articles = _corpus_articles()
+    return {
+        "title": "Constitution of Kenya, 2010",
+        "source": "local_corpus" if articles else "fallback",
+        "independent": True,
+        "articles_count": len(articles),
+        "full_text": _get_constitution_text(),
+    }
 
 
-@router.get("/chapters", response_model=List[Dict])
+@router.get("/chapters")
 async def get_chapters():
+    articles = _corpus_articles()
+    if articles:
+        chapters: dict = {}
+        for a in articles:
+            ch = a.get("chapter") or "Other"
+            chapters.setdefault(ch, {"chapter": ch, "title": ch, "articles": []})
+            chapters[ch]["articles"].append({
+                "article_num": a.get("article_num"),
+                "title": a.get("title"),
+                "content": a.get("content"),
+                "id": a.get("id"),
+            })
+        return list(chapters.values())
+
     text = _get_constitution_text()
     chunks: List[Dict] = []
     lines = text.split("\n")
@@ -326,6 +349,31 @@ async def get_chapters():
 
 @router.get("/chapters/{chapter_num}")
 async def get_chapter(chapter_num: int):
+    articles = _corpus_articles()
+    if articles:
+        chapters = []
+        seen = []
+        for a in articles:
+            ch = a.get("chapter") or "Other"
+            if ch not in seen:
+                seen.append(ch)
+        if 1 <= chapter_num <= len(seen):
+            ch = seen[chapter_num - 1]
+            arts = [a for a in articles if (a.get("chapter") or "Other") == ch]
+            return {
+                "chapter_num": chapter_num,
+                "title": ch,
+                "articles": [
+                    {
+                        "article_num": a.get("article_num"),
+                        "title": a.get("title"),
+                        "content": a.get("content"),
+                    }
+                    for a in arts
+                ],
+                "source": "local_corpus",
+            }
+
     text = _get_constitution_text()
     lines = text.split("\n")
     capture = False
@@ -346,6 +394,15 @@ async def get_chapter(chapter_num: int):
 
 @router.get("/articles/{article_num}")
 async def get_article(article_num: int):
+    for a in _corpus_articles():
+        if a.get("article_num") == article_num:
+            return {
+                "article_num": article_num,
+                "title": f"Article {article_num} — {a.get('title')}",
+                "content": a.get("content"),
+                "chapter": a.get("chapter"),
+                "source": "local_corpus",
+            }
     text = _get_constitution_text()
     paragraphs = text.split("\n\n")
     for i, para in enumerate(paragraphs):
@@ -362,7 +419,24 @@ async def get_article(article_num: int):
 
 
 @router.get("/search")
-async def search_constitution(q: str = Query(...)):
+async def search_constitution_endpoint(q: str = Query(...)):
+    from api.backend.services import corpus as local_corpus
+    hits = local_corpus.search_constitution(q)
+    if hits:
+        return {
+            "query": q,
+            "count": len(hits),
+            "results": [
+                {
+                    "article_num": a.get("article_num"),
+                    "title": a.get("title"),
+                    "chapter": a.get("chapter"),
+                    "content": a.get("content"),
+                }
+                for a in hits
+            ],
+            "source": "local_corpus",
+        }
     text = _get_constitution_text()
     paragraphs = [p for p in text.split("\n\n") if q.lower() in p.lower()]
-    return {"query": q, "results": paragraphs}
+    return {"query": q, "results": paragraphs, "source": "fallback"}

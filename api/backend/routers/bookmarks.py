@@ -46,11 +46,6 @@ class CollectionResponse(BaseModel):
     created_at: datetime
 
 
-async def get_session():
-    async with async_session() as session:
-        yield session
-
-
 @router.get("/", response_model=List[BookmarkResponse])
 async def list_bookmarks(
     current_user: User = Depends(get_current_user),

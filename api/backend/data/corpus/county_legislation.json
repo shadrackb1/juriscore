@@ -1,0 +1,14 @@
+[
+  {"id": "cl-nairobi-finance", "title": "Nairobi City County Finance Act", "county": "Nairobi City", "year": 2023, "summary": "County taxes, fees and charges for services including parking, single business permits and market fees.", "status": "In force"},
+  {"id": "cl-mombasa-finance", "title": "Mombasa County Finance Act", "county": "Mombasa", "year": 2023, "summary": "County revenue measures for port-adjacent services, markets and outdoor advertising.", "status": "In force"},
+  {"id": "cl-kisumu-health", "title": "Kisumu County Health Services Act", "county": "Kisumu", "year": 2022, "summary": "Governs county health facilities, community health promoters and emergency care access.", "status": "In force"},
+  {"id": "cl-nakuru-water", "title": "Nakuru County Water and Sanitation Services Act", "county": "Nakuru", "year": 2021, "summary": "County water service provision, tariffs and catchment protection.", "status": "In force"},
+  {"id": "cl-machakos-pb", "title": "Machakos County Public Participation Act", "county": "Machakos", "year": 2020, "summary": "County framework for public participation in planning, budgeting and legislation — often cited in PA jurisprudence.", "status": "In force"},
+  {"id": "cl-makueni-pb", "title": "Makueni County Public Participation Guidelines", "county": "Makueni", "year": 2019, "summary": "Guidelines on notice, ward forums and feedback to citizens. Model for county participation.", "status": "In force"},
+  {"id": "cl-kajiado-env", "title": "Kajiado County Environment Management Act", "county": "Kajiado", "year": 2021, "summary": "County rules on sand harvesting, quarrying, waste and wetland buffer zones.", "status": "In force"},
+  {"id": "cl-kilifi-land", "title": "Kilifi County Community Land Support Act", "county": "Kilifi", "year": 2022, "summary": "Supports community land committees and registration processes under the Community Land Act.", "status": "In force"},
+  {"id": "cl-uasin-tourism", "title": "Uasin Gishu County Tourism Act", "county": "Uasin Gishu", "year": 2020, "summary": "County tourism licensing, heritage sites and event regulation.", "status": "In force"},
+  {"id": "cl-kakamega-coop", "title": "Kakamega County Co-operative Development Policy & Act provisions", "county": "Kakamega", "year": 2018, "summary": "County support for SACCOs and dairy co-operatives; links to Co-operative Tribunal jurisdiction.", "status": "In force"},
+  {"id": "cl-garissa-wajir", "title": "Garissa County Drought Management Act", "county": "Garissa", "year": 2021, "summary": "County drought contingency, livestock offtake and relief coordination.", "status": "In force"},
+  {"id": "cl-turkana-water", "title": "Turkana County Water Resource Management Act", "county": "Turkana", "year": 2020, "summary": "County rules on boreholes, pastoral water points and cross-border water issues.", "status": "In force"}
+]

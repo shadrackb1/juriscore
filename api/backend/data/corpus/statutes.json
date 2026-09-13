@@ -1,0 +1,1204 @@
+[
+  {
+    "id": "stat-penal-code",
+    "title": "Penal Code",
+    "citation": "Cap. 63",
+    "cap_number": "63",
+    "year": 1930,
+    "summary": "Principal criminal statute defining offences, defences, and punishments in Kenya.",
+    "full_text": "The Penal Code (Cap. 63) establishes criminal offences and penalties in Kenya.\n\nPart I — Preliminary: This Act may be cited as the Penal Code.\n\nPart II — General Principles: A person is not criminally responsible for an act or omission if at the time of doing the act the person was in such a state of mental disease or natural mental infirmity as to deprive the person of capacity to understand what the person is doing.\n\nPart III — Offences against public order: Treason, sedition, unlawful assemblies and riots.\n\nPart IV — Offences against the administration of lawful authority: Escape from lawful custody, resisting officers, perjury.\n\nPart V — Offences against person: Murder, manslaughter, assault, causing grievous harm, defilement, rape, kidnapping.\n\nMurder (s. 203): Any person who of malice aforethought causes death of another person by an unlawful act or omission is guilty of murder.\n\nManslaughter (s. 202): Any person who by an unlawful act or omission causes the death of another person is guilty of the felony termed manslaughter.\n\nTheft (s. 275): Any person who steals anything capable of being stolen is guilty of a felony and is liable to imprisonment for three years unless the punishment is elsewhere prescribed.\n\nRobbery with violence (s. 296(2)): If the offender is armed with a dangerous or offensive weapon, or is in company with one or more other person or persons, or if, at or immediately before or immediately after the time of the robbery, the offender wounds, beats, strikes, or uses any other personal violence to any person, the offender is liable to suffer death.",
+    "sections": [
+      {
+        "number": "203",
+        "heading": "Murder",
+        "text": "Any person who of malice aforethought causes death of another person by an unlawful act or omission is guilty of murder."
+      },
+      {
+        "number": "204",
+        "heading": "Punishment of murder",
+        "text": "Any person who is convicted of murder shall be sentenced to death, subject to Article 26 of the Constitution and judicial interpretation regarding mandatory death sentences."
+      },
+      {
+        "number": "275",
+        "heading": "Stealing",
+        "text": "Any person who steals anything capable of being stolen is guilty of a felony and is liable, if no other punishment is provided, to imprisonment for three years."
+      },
+      {
+        "number": "296",
+        "heading": "Robbery with violence",
+        "text": "Every person who commits the felony of robbery is liable to imprisonment for fourteen years. If the offender is armed with a dangerous or offensive weapon, or is in company with one or more other person, or wounds, beats or uses personal violence, the offender is liable to suffer death."
+      }
+    ]
+  },
+  {
+    "id": "stat-criminal-procedure",
+    "title": "Criminal Procedure Code",
+    "citation": "Cap. 75",
+    "cap_number": "75",
+    "year": 1930,
+    "summary": "Governs procedure in criminal trials, arrest, bail, charge sheets, and appeals in criminal matters.",
+    "full_text": "The Criminal Procedure Code regulates how criminal proceedings are conducted in Kenya.\n\nArrest: A police officer may arrest without warrant any person reasonably suspected of having committed an offence.\n\nBail: Subject to Article 49, an accused person is entitled to be released on bail pending trial unless there are compelling reasons.\n\nPreliminary inquiry / committal: In the High Court, committal proceedings apply to offences triable by the High Court.\n\nTrial: The court shall take evidence of the prosecution first. The accused is entitled to cross-examine witnesses. After the prosecution case, the court may rule there is no case to answer under section 210, or put the accused on defence.\n\nSection 210 — No case to answer: If at the close of the evidence for the prosecution, the court considers that there is no evidence that the accused committed the offence, the court shall dismiss the charge and acquit the accused.\n\nSection 347 — Appeals from subordinate courts: An appeal lies to the High Court from a conviction or sentence of a subordinate court.",
+    "sections": [
+      {
+        "number": "49",
+        "heading": "Rights of arrested person (constitutional overlay)",
+        "text": "An accused person must be brought before a court within 24 hours and is entitled to bail on reasonable conditions."
+      },
+      {
+        "number": "210",
+        "heading": "No case to answer",
+        "text": "If at the close of the case for the prosecution the court considers that there is no evidence that the accused committed the offence, the court shall dismiss the charge and acquit the accused."
+      },
+      {
+        "number": "347",
+        "heading": "Appeals from subordinate courts",
+        "text": "An appeal shall lie to the High Court from a conviction or sentence of a subordinate court."
+      }
+    ]
+  },
+  {
+    "id": "stat-evidence",
+    "title": "Evidence Act",
+    "citation": "Cap. 80",
+    "cap_number": "80",
+    "year": "1963",
+    "summary": "Rules on admissibility, relevance, burden and standard of proof, and witness competence in Kenyan courts.",
+    "full_text": "The Evidence Act (Cap. 80) governs what evidence may be received and how it is assessed.\n\nRelevance: Facts not in issue but so connected with a fact in issue as to form part of the same transaction are relevant.\n\nHearsay: Generally inadmissible subject to statutory exceptions and constitutional fair-trial guarantees.\n\nConfessions: A confession made by an accused person is inadmissible if obtained by oppression, violence, threat or promise.\n\nBurden of proof: The burden of proof as to any particular fact lies on that person who wishes the court to believe in its existence.\n\nStandard of proof: In civil cases the standard is balance of probabilities; in criminal cases it is beyond reasonable doubt.\n\nElectronic evidence: Electronic records may be admissible if authenticity can be established.\n\nCharacter evidence: In criminal proceedings, evidence of bad character is generally inadmissible to prove conduct, subject to exceptions.",
+    "sections": [
+      {
+        "number": "2",
+        "heading": "Relevant facts",
+        "text": "Facts which, either by themselves or when taken with other facts, make the existence of the fact in issue probable or improbable are relevant."
+      },
+      {
+        "number": "25",
+        "heading": "Confessions",
+        "text": "A confession made by an accused person is inadmissible if it appears to the court to have been caused by any violent, oppressive, inhuman or degrading conduct or threat."
+      },
+      {
+        "number": "107",
+        "heading": "Burden of proof",
+        "text": "Whoever desires any court to give judgment as to any legal right or liability dependent on the existence of facts which he asserts must prove that those facts exist."
+      }
+    ]
+  },
+  {
+    "id": "stat-contract",
+    "title": "Law of Contract Act",
+    "citation": "Cap. 23",
+    "cap_number": "23",
+    "year": "1961",
+    "summary": "Formation, performance, breach, and remedies for contracts in Kenya.",
+    "full_text": "The Law of Contract Act codifies general principles of contract law in Kenya.\n\nOffer and acceptance: A contract arises when an offer is accepted without qualification.\n\nConsideration: An agreement made without consideration is void unless made by deed or under statutory exception.\n\nCapacity: Minors and persons of unsound mind have limited contractual capacity.\n\nWritten contracts: Certain contracts must be evidenced in writing (e.g., guarantees, disposition of interests in land under Article 40 and Land Registration Act).\n\nBreach and damages: The injured party is entitled to damages reasonably arising from the breach, subject to remoteness rules.\n\nSpecific performance: Available as an equitable remedy where damages are inadequate.",
+    "sections": [
+      {
+        "number": "3",
+        "heading": "Agreements made without consideration void",
+        "text": "An agreement made without consideration is void, unless it is expressed in writing and registered or is a promise to compensate for something done or is a promise to pay a debt barred by limitation."
+      },
+      {
+        "number": "23",
+        "heading": "Contract in restraint of trade",
+        "text": "Every agreement by which any one is restrained from exercising a lawful profession, trade or business of any kind is to that extent void."
+      }
+    ]
+  },
+  {
+    "id": "stat-employment",
+    "title": "Employment Act",
+    "citation": "No. 11 of 2007",
+    "cap_number": "226",
+    "year": 2007,
+    "summary": "Primary statute on employment relationships, contracts, termination, leave, and workplace rights.",
+    "full_text": "The Employment Act 2007 is the principal statute governing employment in Kenya.\n\nWritten contracts: An employer shall give an employee a written statement of particulars of employment.\n\nProbation: Probationary employment shall not exceed six months but may be extended once for a further six months with consent.\n\nEqual pay: An employer shall pay employees equal remuneration for work of equal value.\n\nTermination: Employment may be terminated fairly for incapacity, misconduct, redundancy, or other valid reason after a fair procedure.\n\nUnfair termination: Termination is unfair if the employer fails to prove a valid reason or fails to follow fair procedure (notice, hearing).\n\nRemedies: Compensation up to 12 months' gross wages for unfair termination; reinstatement or re-engagement may be ordered by the Employment and Labour Relations Court.\n\nLeave: Annual leave of at least 21 working days with full pay after twelve consecutive months of service. Sick leave and maternity/paternity leave as prescribed.",
+    "sections": [
+      {
+        "number": "9",
+        "heading": "Employment contract",
+        "text": "A contract of service for a period exceeding three months shall be in writing and shall state the names of the parties, date of commencement, form and duration of the contract, place of work, job description, remuneration and method of calculation, and leave entitlement."
+      },
+      {
+        "number": "35",
+        "heading": "Termination notice",
+        "text": "Either party may terminate a contract of service by giving notice. Notice periods depend on the interval of payment of wages."
+      },
+      {
+        "number": "41",
+        "heading": "Notification and hearing before termination",
+        "text": "An employer shall, before terminating the employment of an employee, notify the employee of the reasons and give the employee an opportunity to make representations."
+      },
+      {
+        "number": "45",
+        "heading": "Complaint of unfair termination",
+        "text": "An employee may present a complaint alleging unfair termination to the labour officer or the Employment and Labour Relations Court."
+      }
+    ]
+  },
+  {
+    "id": "stat-land-act",
+    "title": "Land Act",
+    "citation": "No. 6 of 2012",
+    "cap_number": null,
+    "year": 2012,
+    "summary": "Governs land tenure, rights, compulsory acquisition, leases, and public land management.",
+    "full_text": "The Land Act 2012 gives effect to Article 63–64 of the Constitution on land tenure.\n\nCategories of land: Public, community, and private land.\n\nAll land in Kenya belongs to the people of Kenya collectively as a nation, as communities and as individuals.\n\nPrivate land: Land registered under freehold or leasehold tenure.\n\nCommunity land: Land vested in communities identified on the basis of ethnicity, culture or similar interest.\n\nPublic land: Land held by the national government in trust for the people of Kenya.\n\nCompulsory acquisition: The National Land Commission may recommend compulsory acquisition for a public purpose or in the public interest, subject to fair compensation and public participation.\n\nLeases: Leasehold interests may be granted for a term not exceeding 99 years for private land.",
+    "sections": [
+      {
+        "number": "5",
+        "heading": "Categories of land",
+        "text": "Land in Kenya shall be classified as public, community or private land."
+      },
+      {
+        "number": "107",
+        "heading": "Compulsory acquisition",
+        "text": "The President shall acquire land on behalf of the national government for a public purpose or in the public interest upon recommendation of the National Land Commission, following inquiry and payment of compensation."
+      }
+    ]
+  },
+  {
+    "id": "stat-environment",
+    "title": "Environmental Management and Co-ordination Act",
+    "citation": "Cap. 387 (EMCA 1999)",
+    "cap_number": "387",
+    "year": 1999,
+    "summary": "Framework for environmental protection, EIA, NEMA powers, and environmental offences.",
+    "full_text": "EMCA is Kenya's principal environmental statute.\n\nEvery person has a duty to safeguard and enhance the environment.\n\nEnvironmental Impact Assessment (EIA) is mandatory for projects likely to have significant environmental effects.\n\nNEMA may issue restoration orders, improvement notices, and prohibition notices.\n\nThe National Environment Tribunal hears appeals from NEMA decisions.\n\nEnvironmental offences include pollution of water, air, and soil; illegal dumping; and failure to conduct EIA.",
+    "sections": [
+      {
+        "number": "3",
+        "heading": "Duty to safeguard environment",
+        "text": "Every person in Kenya has a duty to safeguard and enhance the environment."
+      },
+      {
+        "number": "58",
+        "heading": "Environmental Impact Assessment",
+        "text": "A project proponent shall not implement a project that is likely to have significant environmental effects unless an EIA study has been conducted and a licence issued by NEMA."
+      }
+    ]
+  },
+  {
+    "id": "stat-women-representation",
+    "title": "Political Parties Act",
+    "citation": "No. 11 of 2011",
+    "cap_number": null,
+    "year": 2011,
+    "summary": "Registration, funding, and regulation of political parties in Kenya.",
+    "full_text": "The Political Parties Act establishes the Office of the Registrar of Political Parties and regulates party registration, symbols, funding, and codes of conduct. Political parties must have a national character and promote the values in Articles 10 and 91 of the Constitution.",
+    "sections": []
+  },
+  {
+    "id": "stat-cooperative",
+    "title": "Co-operative Societies Act",
+    "citation": "Cap. 490",
+    "cap_number": "490",
+    "year": 1966,
+    "summary": "Registration and regulation of co-operative societies in Kenya.",
+    "full_text": "The Co-operative Societies Act provides for the establishment, registration, supervision, and dissolution of co-operative societies. Societies are managed by elected committees subject to the Commissioner for Co-operative Development. Disputes may be referred to the Co-operative Tribunal.",
+    "sections": []
+  },
+  {
+    "id": "stat-insolvency",
+    "title": "Insolvency Act",
+    "citation": "No. 18 of 2015",
+    "cap_number": null,
+    "year": 2015,
+    "summary": "Corporate and personal insolvency, liquidation, administration, and bankruptcy.",
+    "full_text": "The Insolvency Act modernises Kenya's insolvency law. It provides for liquidation of companies, voluntary administration, schemes of arrangement, and personal bankruptcy. The official receiver and courts oversee processes. Secured creditors' rights and preferential debts are regulated.",
+    "sections": []
+  },
+  {
+    "id": "stat-companies",
+    "title": "Companies Act",
+    "citation": "No. 17 of 2015",
+    "cap_number": null,
+    "year": 2015,
+    "summary": "Incorporation, governance, directors' duties, and winding up of companies.",
+    "full_text": "The Companies Act 2015 governs company formation and operation in Kenya, including private and public companies, directors' duties, members' rights, share capital, and corporate rescue. Companies are registered with the Business Registration Service.",
+    "sections": []
+  },
+  {
+    "id": "stat-family",
+    "title": "Matrimonial Property Act",
+    "citation": "No. 49 of 2013",
+    "cap_number": null,
+    "year": 2013,
+    "summary": "Ownership and division of matrimonial property upon divorce or separation.",
+    "full_text": "The Matrimonial Property Act recognises that spouses have equal proprietary rights. Matrimonial property includes the matrimonial home, household goods, and other property acquired during marriage. Contribution may be monetary or non-monetary including domestic work and farm labour.",
+    "sections": []
+  },
+  {
+    "id": "stat-succession",
+    "title": "Law of Succession Act",
+    "citation": "Cap. 160",
+    "cap_number": "160",
+    "year": 1981,
+    "summary": "Wills, intestate succession, grants of representation, and administration of estates.",
+    "full_text": "The Law of Succession Act governs inheritance in Kenya.\n\nA person may dispose of free property by will.\n\nWhere a person dies intestate, the estate devolves according to statutory rules, with the surviving spouse and children having priority claims.\n\nGrants of probate or letters of administration are issued by the High Court or Resident Magistrates' courts with jurisdiction.\n\nDependants may apply for reasonable provision from an estate under section 26.",
+    "sections": [
+      {
+        "number": "26",
+        "heading": "Provision for dependants",
+        "text": "Where a deceased person has left a will that fails to make reasonable provision for a dependant, the court may order reasonable provision out of the net estate."
+      },
+      {
+        "number": "35",
+        "heading": "Intestate succession — surviving spouse and children",
+        "text": "Where an intestate has left one surviving spouse and a child or children, the surviving spouse shall be entitled to personal and household effects absolutely and to a life interest in the whole residue of the net intestate estate."
+      }
+    ]
+  },
+  {
+    "id": "stat-societies",
+    "title": "Public Benefit Organizations Act",
+    "citation": "No. 18 of 2013",
+    "cap_number": null,
+    "year": 2013,
+    "summary": "Registration and regulation of public benefit organizations (NGOs, CBOs).",
+    "full_text": "The Public Benefit Organizations Act provides for registration, governance, and accountability of organisations that exist for public benefit. The Regulatory Authority maintains the register and may cancel registrations for non-compliance.",
+    "sections": []
+  },
+  {
+    "id": "stat-data",
+    "title": "Data Protection Act",
+    "citation": "No. 24 of 2019",
+    "cap_number": null,
+    "year": 2019,
+    "summary": "Protection of personal data, data subject rights, and regulation of data controllers.",
+    "full_text": "The Data Protection Act implements Article 31(c) and (d) of the Constitution. It establishes the Office of the Data Protection Commissioner. Processing of personal data requires lawful basis. Data subjects have rights of access, rectification, erasure, and objection. Cross-border transfers are regulated.",
+    "sections": []
+  },
+  {
+    "id": "stat-access-info",
+    "title": "Access to Information Act",
+    "citation": "No. 31 of 2016",
+    "cap_number": null,
+    "year": 2016,
+    "summary": "Gives effect to Article 35 on access to information held by public entities.",
+    "full_text": "Every citizen has the right of access to information held by the State and by another person and required for the exercise or protection of any right. Public entities must publish and publicise important information. Requests may be refused on limited grounds including privacy, security, and commercial confidence.",
+    "sections": []
+  },
+  {
+    "id": "stat-income-tax",
+    "title": "Income Tax Act",
+    "citation": "Cap. 470",
+    "cap_number": "470",
+    "year": 1974,
+    "summary": "Principal statute imposing tax on income of persons resident and non-resident in Kenya.",
+    "full_text": "The Income Tax Act (Cap. 470) charges tax on income of every person for each year of income.\n\nResident individuals are taxed on worldwide income. Non-residents are taxed on income sourced in Kenya.\n\nCharge of tax: There shall be charged for each year of income tax upon income of every person for each year of income.\n\nDeductions: Outgoings and expenses wholly and exclusively incurred in the production of income are deductible subject to statutory limits.\n\nWithholding tax: Specific payments to non-residents and specified resident persons attract withholding tax at prescribed rates.\n\nCapital allowances: Wear and tear and industrial building deductions are available for qualifying assets.\n\nTransfer pricing: Transactions with associated enterprises must meet the arm's length principle.",
+    "sections": [
+      {
+        "number": "3",
+        "heading": "Charge of tax",
+        "text": "There shall be charged for each year of income tax upon the income of every person for each year of income."
+      },
+      {
+        "number": "15",
+        "heading": "Deductions",
+        "text": "For the purpose of ascertaining the gains or profits, there shall be deducted all outgoings and expenses wholly and exclusively incurred in the production of that income."
+      },
+      {
+        "number": "35",
+        "heading": "Withholding tax",
+        "text": "A resident person making a payment to a non-resident person shall deduct tax at the prescribed rate and remit to the Commissioner."
+      }
+    ]
+  },
+  {
+    "id": "stat-vat",
+    "title": "Value Added Tax Act",
+    "citation": "No. 35 of 2013",
+    "cap_number": "476",
+    "year": 2013,
+    "summary": "Imposes VAT on taxable supplies of goods and services in Kenya.",
+    "full_text": "The VAT Act 2013 provides for the imposition of value added tax on taxable supplies, imports, and related matters.\n\nStandard rate of VAT applies to taxable supplies unless exempt or zero-rated.\n\nA registered person making taxable supplies must account for output tax and may claim input tax subject to documentary requirements.\n\nThe Cabinet Secretary may by order amend the schedules of exempt and zero-rated goods with parliamentary approval.\n\nOffences include failure to register, false returns, and failure to issue tax invoices.",
+    "sections": [
+      {
+        "number": "5",
+        "heading": "VAT on taxable supplies",
+        "text": "VAT shall be charged on any taxable supply of goods or services made in Kenya by a registered person in the course of business."
+      },
+      {
+        "number": "13",
+        "heading": "Registration",
+        "text": "A person who makes taxable supplies exceeding the registration threshold shall apply for registration."
+      }
+    ]
+  },
+  {
+    "id": "stat-children",
+    "title": "Children Act",
+    "citation": "No. 29 of 2022",
+    "cap_number": null,
+    "year": 2022,
+    "summary": "Consolidates and reformulates law relating to children in Kenya, including care, protection and justice.",
+    "full_text": "The Children Act 2022 gives effect to Article 53 of the Constitution and the Convention on the Rights of the Child.\n\nBest interests of the child shall be the primary consideration in all actions concerning children.\n\nThe Act covers parental responsibility, foster care, adoption, child justice, and protection from abuse, exploitation and harmful practices.\n\nDetention of children shall be a measure of last resort and for the shortest appropriate period.",
+    "sections": [
+      {
+        "number": "4",
+        "heading": "Best interests of the child",
+        "text": "In all actions concerning children, the best interests of the child shall be the primary consideration."
+      },
+      {
+        "number": "8",
+        "heading": "Right to education",
+        "text": "Every child has the right to free and compulsory basic education."
+      }
+    ]
+  },
+  {
+    "id": "stat-faa",
+    "title": "Fair Administrative Action Act",
+    "citation": "No. 4 of 2015",
+    "cap_number": null,
+    "year": 2015,
+    "summary": "Gives effect to Article 47 on fair administrative action and procedural fairness.",
+    "full_text": "The Fair Administrative Action Act operationalises Article 47 of the Constitution.\n\nEvery person has the right to administrative action that is expeditious, efficient, lawful, reasonable and procedurally fair.\n\nWhere a right is adversely affected, the person is entitled to written reasons for the decision.\n\nAdministrative bodies must give prior notice, opportunity to make representations, and notice of appeal or review rights.\n\nThe High Court may review administrative action on grounds of illegality, irrationality, procedural impropriety, and breach of legitimate expectation.",
+    "sections": [
+      {
+        "number": "4",
+        "heading": "Administrative action to be expeditious, efficient, lawful",
+        "text": "Every person has the right to administrative action which is expeditious, efficient, lawful, reasonable and procedurally fair."
+      },
+      {
+        "number": "6",
+        "heading": "Prior notice",
+        "text": "A person likely to be adversely affected by an administrative decision is entitled to prior notice of the proposed decision and reasons for it."
+      },
+      {
+        "number": "7",
+        "heading": "Written reasons",
+        "text": "Where an administrative action is likely to adversely affect rights, the administrator shall give written reasons for the action."
+      }
+    ]
+  },
+  {
+    "id": "stat-competition",
+    "title": "Competition Act",
+    "citation": "No. 12 of 2010",
+    "cap_number": null,
+    "year": 2010,
+    "summary": "Promotes and protects competition in Kenyan markets; regulates mergers and consumer protection.",
+    "full_text": "The Competition Act prohibits anti-competitive agreements and abuse of dominant position; provides for merger control; and protects consumers against unfair practices.\n\nThe Competition Authority of Kenya investigates and adjudicates competition offences.\n\nExclusionary abuses include predatory pricing, refusal to deal, and tied selling where the effect is to substantially prevent or lessen competition.\n\nMergers require prior notification and approval where thresholds are met.",
+    "sections": [
+      {
+        "number": "21",
+        "heading": "Restrictive trade practices",
+        "text": "An agreement between undertakings is prohibited if its object or effect is the prevention, restriction or distortion of competition."
+      },
+      {
+        "number": "24",
+        "heading": "Abuse of dominant position",
+        "text": "An undertaking which holds a dominant position in a market is prohibited from abusing that position."
+      }
+    ]
+  },
+  {
+    "id": "stat-insurance",
+    "title": "Insurance Act",
+    "citation": "Cap. 487",
+    "cap_number": "487",
+    "year": 1984,
+    "summary": "Regulates insurance business, licensing of insurers and intermediaries in Kenya.",
+    "full_text": "The Insurance Act regulates the carrying on of insurance business in Kenya. Insurers must be licensed by the Insurance Regulatory Authority. The Act covers long-term and general insurance business, professional indemnity, and policyholder protection.",
+    "sections": []
+  },
+  {
+    "id": "stat-banking",
+    "title": "Banking Act",
+    "citation": "Cap. 488",
+    "cap_number": "488",
+    "year": 1989,
+    "summary": "Licensing and regulation of financial institutions by the Central Bank of Kenya.",
+    "full_text": "The Banking Act requires institutions taking deposits to be licensed by the Central Bank. It covers capital requirements, liquidity, lending limits, confidentiality of customer information, and resolution of troubled institutions.",
+    "sections": [
+      {
+        "number": "31",
+        "heading": "Restriction on disclosure of customer information",
+        "text": "No person shall disclose customer account information except as required by law or with customer consent."
+      }
+    ]
+  },
+  {
+    "id": "stat-women-property",
+    "title": "Married Women Property Act",
+    "citation": "Cap. 160A",
+    "cap_number": "160A",
+    "year": 1882,
+    "summary": "Historical statute on married women's property, read with Matrimonial Property Act and Constitution.",
+    "full_text": "Read with the Constitution (Articles 27, 40, 45) and Matrimonial Property Act 2013, this Act historically enabled married women to hold property in their own name. Modern disputes turn on contribution (monetary and non-monetary) to acquisition of matrimonial property.",
+    "sections": []
+  },
+  {
+    "id": "stat-land-registration",
+    "title": "Land Registration Act",
+    "citation": "No. 3 of 2012",
+    "cap_number": null,
+    "year": 2012,
+    "summary": "Governs registration of interests in land, titles, caveats and land registries.",
+    "full_text": "The Land Registration Act 2012 provides for the registration of title to land and interests in land. Registration confers indefeasibility subject to fraud, overriding interests and statutory exceptions. The Act covers transfers, leases, charges, caveats and rectification of the register.",
+    "sections": [
+      {
+        "number": "26",
+        "heading": "Registration as conclusive evidence of proprietorship",
+        "text": "The certificate of title issued upon registration shall be taken by all courts as prima facie evidence that the person named is the proprietor."
+      }
+    ]
+  },
+  {
+    "id": "stat-national-land",
+    "title": "National Land Commission Act",
+    "citation": "No. 5 of 2012",
+    "cap_number": null,
+    "year": 2012,
+    "summary": "Establishes the National Land Commission and its functions under Article 67.",
+    "full_text": "The National Land Commission Act gives effect to Article 67. The Commission manages public land on behalf of the national and county governments; recommends a national land policy; investigates and resolves historical land injustices; and recommends a fair process for compulsory acquisition.",
+    "sections": []
+  },
+  {
+    "id": "stat-counties",
+    "title": "County Governments Act",
+    "citation": "No. 17 of 2012",
+    "cap_number": null,
+    "year": 2012,
+    "summary": "Provides for county government functions, intergovernmental relations and county assemblies.",
+    "full_text": "The County Governments Act elaborates on Chapter Eleven of the Constitution. It covers county executive and assembly functions, public participation, county planning, and intergovernmental dispute resolution.",
+    "sections": []
+  },
+  {
+    "id": "stat-public-participation",
+    "title": "Public Participation and Access to Information",
+    "citation": "Linked to Articles 10, 118, 196, 232",
+    "cap_number": null,
+    "year": 2010,
+    "summary": "Constitutional baseline for public participation in legislative and policy processes.",
+    "full_text": "Kenyan courts have developed a substantial jurisprudence requiring meaningful public participation before enactment of legislation and county laws. Requirements include timely notice, accessible information, opportunity to make submissions, and consideration of views received. Failure to involve the public may invalidate the enactment.",
+    "sections": []
+  },
+  {
+    "id": "stat-brain-constitution-of-kenya-2010",
+    "title": "Constitution of Kenya, 2010",
+    "citation": "Cap. 16 (Supplement No. 4)",
+    "cap_number": "16",
+    "year": 2010,
+    "summary": "The supreme law of the Republic of Kenya. Contains 18 chapters and 305 articles covering sovereignty, bill of rights, devolution, judiciary, and governance.",
+    "full_text": "The supreme law of the Republic of Kenya. Contains 18 chapters and 305 articles covering sovereignty, bill of rights, devolution, judiciary, and governance.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": [
+      "Chapter 1: Sovereignty of the People (Articles 1-6)",
+      "Chapter 2: Republic (Articles 3-6)",
+      "Chapter 3: Citizenship (Articles 16-18)",
+      "Chapter 4: Bill of Rights (Articles 19-59)",
+      "Chapter 5: Land and Environment (Articles 60-81)",
+      "Chapter 6: Leadership and Integrity (Articles 73-80)",
+      "Chapter 7: Representation of the People (Articles 81-104)",
+      "Chapter 8: Legislature (Articles 95-132)",
+      "Chapter 9: Executive (Articles 129-155)",
+      "Chapter 10: Judiciary (Articles 159-174)",
+      "Chapter 11: Devolved Government (Articles 174-200)",
+      "Chapter 12: Public Finance (Articles 199-233)",
+      "Chapter 13: Public Service (Articles 233-247)",
+      "Chapter 14: National Security (Articles 238-265)",
+      "Chapter 15: Commissions and Independent Offices (Articles 248-277)",
+      "Chapter 16: Judicial Service Commission (Articles 171-174)",
+      "Chapter 17: General Provisions (Articles 258-266)",
+      "Chapter 18: Transitional and Consequential Provisions (Articles 262-305)"
+    ]
+  },
+  {
+    "id": "stat-brain-penal-code",
+    "title": "Penal Code",
+    "citation": "Cap. 63",
+    "cap_number": "63",
+    "year": 1930,
+    "summary": "An Act of Parliament to establish a code of criminal law defining offences and prescribing punishments.",
+    "full_text": "An Act of Parliament to establish a code of criminal law defining offences and prescribing punishments.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-criminal-procedure-code",
+    "title": "Criminal Procedure Code",
+    "citation": "Cap. 75",
+    "cap_number": "75",
+    "year": 1930,
+    "summary": "An Act to regulate criminal procedure in the courts, including arrest, bail, trials, and sentencing.",
+    "full_text": "An Act to regulate criminal procedure in the courts, including arrest, bail, trials, and sentencing.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-civil-procedure-act",
+    "title": "Civil Procedure Act",
+    "citation": "Cap. 21",
+    "cap_number": "21",
+    "year": 1924,
+    "summary": "An Act to consolidate and amend the law relating to civil procedure in the courts of Kenya.",
+    "full_text": "An Act to consolidate and amend the law relating to civil procedure in the courts of Kenya.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-employment-act",
+    "title": "Employment Act",
+    "citation": "No. 11 of 2007",
+    "cap_number": null,
+    "year": 2007,
+    "summary": "An Act to consolidate and amend the law relating to employment and for connected purposes.",
+    "full_text": "An Act to consolidate and amend the law relating to employment and for connected purposes.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-land-act",
+    "title": "Land Act",
+    "citation": "No. 6 of 2012",
+    "cap_number": null,
+    "year": 2012,
+    "summary": "An Act to give effect to the principle that land is held by the people of Kenya collectively as a national resource.",
+    "full_text": "An Act to give effect to the principle that land is held by the people of Kenya collectively as a national resource.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-environmental-management-and-co-ordination-act",
+    "title": "Environmental Management and Co-ordination Act",
+    "citation": "No. 8 of 1999",
+    "cap_number": null,
+    "year": 1999,
+    "summary": "An Act to establish a framework for environmental management and to create NEMA.",
+    "full_text": "An Act to establish a framework for environmental management and to create NEMA.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-companies-act",
+    "title": "Companies Act",
+    "citation": "No. 17 of 2015",
+    "cap_number": null,
+    "year": 2015,
+    "summary": "An Act to provide for the registration, regulation, and dissolution of companies in Kenya.",
+    "full_text": "An Act to provide for the registration, regulation, and dissolution of companies in Kenya.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-income-tax-act",
+    "title": "Income Tax Act",
+    "citation": "Cap. 470",
+    "cap_number": "470",
+    "year": 1973,
+    "summary": "An Act to provide for the charging and collection of income tax in Kenya.",
+    "full_text": "An Act to provide for the charging and collection of income tax in Kenya.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-value-added-tax-act",
+    "title": "Value Added Tax Act",
+    "citation": "No. 35 of 2013",
+    "cap_number": null,
+    "year": 2013,
+    "summary": "An Act to impose and provide for the collection of value added tax.",
+    "full_text": "An Act to impose and provide for the collection of value added tax.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-family-protection-act",
+    "title": "Family Protection Act",
+    "citation": "No. 21 of 2019",
+    "cap_number": null,
+    "year": 2019,
+    "summary": "An Act to provide for the protection of family members from domestic violence.",
+    "full_text": "An Act to provide for the protection of family members from domestic violence.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-children-act",
+    "title": "Children Act",
+    "citation": "No. 12 of 2022",
+    "cap_number": null,
+    "year": 2022,
+    "summary": "An Act to give effect to Article 53 of the Constitution on the rights of children.",
+    "full_text": "An Act to give effect to Article 53 of the Constitution on the rights of children.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-public-finance-management-act",
+    "title": "Public Finance Management Act",
+    "citation": "No. 18 of 2012",
+    "cap_number": null,
+    "year": 2012,
+    "summary": "An Act to give effect to Article 201 to 209 of the Constitution on public finance management.",
+    "full_text": "An Act to give effect to Article 201 to 209 of the Constitution on public finance management.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-access-to-information-act",
+    "title": "Access to Information Act",
+    "citation": "No. 31 of 2016",
+    "cap_number": null,
+    "year": 2016,
+    "summary": "An Act to give effect to Article 35 of the Constitution on the right of access to information.",
+    "full_text": "An Act to give effect to Article 35 of the Constitution on the right of access to information.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-anti-corruption-and-economic-crimes-act",
+    "title": "Anti-Corruption and Economic Crimes Act",
+    "citation": "No. 3 of 2003",
+    "cap_number": null,
+    "year": 2003,
+    "summary": "An Act to give effect to Chapter Six of the Constitution on leadership and integrity.",
+    "full_text": "An Act to give effect to Chapter Six of the Constitution on leadership and integrity.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-national-land-commission-act",
+    "title": "National Land Commission Act",
+    "citation": "No. 5 of 2012",
+    "cap_number": null,
+    "year": 2012,
+    "summary": "An Act to give effect to Article 67 of the Constitution on the functions and powers of the National Land Commission.",
+    "full_text": "An Act to give effect to Article 67 of the Constitution on the functions and powers of the National Land Commission.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-intergovernmental-relations-act",
+    "title": "Intergovernmental Relations Act",
+    "citation": "No. 5 of 2012",
+    "cap_number": null,
+    "year": 2012,
+    "summary": "An Act to provide for the framework of intergovernmental relations between national and county governments.",
+    "full_text": "An Act to provide for the framework of intergovernmental relations between national and county governments.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-elections-act",
+    "title": "Elections Act",
+    "citation": "No. 24 of 2011",
+    "cap_number": null,
+    "year": 2011,
+    "summary": "An Act to provide for the conduct of elections and referenda in Kenya.",
+    "full_text": "An Act to provide for the conduct of elections and referenda in Kenya.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-public-procurement-and-asset-disposal-act",
+    "title": "Public Procurement and Asset Disposal Act",
+    "citation": "No. 33 of 2015",
+    "cap_number": null,
+    "year": 2015,
+    "summary": "An Act to provide for the regulation of public procurement and asset disposal by public entities.",
+    "full_text": "An Act to provide for the regulation of public procurement and asset disposal by public entities.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-data-protection-act",
+    "title": "Data Protection Act",
+    "citation": "No. 24 of 2019",
+    "cap_number": null,
+    "year": 2019,
+    "summary": "An Act to give effect to Article 31(c) and (d) of the Constitution on the right to privacy.",
+    "full_text": "An Act to give effect to Article 31(c) and (d) of the Constitution on the right to privacy.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-consumer-protection-act",
+    "title": "Consumer Protection Act",
+    "citation": "No. 46 of 2012",
+    "cap_number": null,
+    "year": 2012,
+    "summary": "An Act to provide for the protection of consumers of goods and services.",
+    "full_text": "An Act to provide for the protection of consumers of goods and services.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-insolvency-act",
+    "title": "Insolvency Act",
+    "citation": "No. 18 of 2015",
+    "cap_number": null,
+    "year": 2015,
+    "summary": "An Act to consolidate and amend the law relating to insolvency of individuals and companies.",
+    "full_text": "An Act to consolidate and amend the law relating to insolvency of individuals and companies.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-limited-liability-partnerships-act",
+    "title": "Limited Liability Partnerships Act",
+    "citation": "No. 17 of 2011",
+    "cap_number": null,
+    "year": 2011,
+    "summary": "An Act to provide for the registration and regulation of limited liability partnerships.",
+    "full_text": "An Act to provide for the registration and regulation of limited liability partnerships.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-competition-act",
+    "title": "Competition Act",
+    "citation": "No. 12 of 2010",
+    "cap_number": null,
+    "year": 2010,
+    "summary": "An Act to make provision for the promotion and enforcement of competition in the market.",
+    "full_text": "An Act to make provision for the promotion and enforcement of competition in the market.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-mutual-legal-assistance-act",
+    "title": "Mutual Legal Assistance Act",
+    "citation": "No. 6 of 2011",
+    "cap_number": null,
+    "year": 2011,
+    "summary": "An Act to provide for mutual legal assistance in criminal matters between Kenya and other states.",
+    "full_text": "An Act to provide for mutual legal assistance in criminal matters between Kenya and other states.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-traffic-act",
+    "title": "Traffic Act",
+    "citation": "Cap. 403",
+    "cap_number": "403",
+    "year": 1968,
+    "summary": "An Act to make provision for the regulation of motor vehicles, the conduct of persons using roads, and for matters connected therewith.",
+    "full_text": "An Act to make provision for the regulation of motor vehicles, the conduct of persons using roads, and for matters connected therewith.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-evidence-act",
+    "title": "Evidence Act",
+    "citation": "Cap. 80",
+    "cap_number": "80",
+    "year": 1930,
+    "summary": "An Act to consolidate and amend the law relating to the law of evidence in Kenya.",
+    "full_text": "An Act to consolidate and amend the law relating to the law of evidence in Kenya.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-law-of-contract-act",
+    "title": "Law of Contract Act",
+    "citation": "Cap. 23",
+    "cap_number": "23",
+    "year": 1961,
+    "summary": "An Act to make provision for the law relating to contracts in Kenya.",
+    "full_text": "An Act to make provision for the law relating to contracts in Kenya.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-sale-of-goods-act",
+    "title": "Sale of Goods Act",
+    "citation": "Cap. 31",
+    "cap_number": "31",
+    "year": 1930,
+    "summary": "An Act to make provision for the law relating to the sale of goods.",
+    "full_text": "An Act to make provision for the law relating to the sale of goods.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-law-of-succession-act",
+    "title": "Law of Succession Act",
+    "citation": "Cap. 160",
+    "cap_number": "160",
+    "year": 1981,
+    "summary": "An Act to consolidate and amend the law relating to intestate and testamentary succession and the administration of estates of deceased persons.",
+    "full_text": "An Act to consolidate and amend the law relating to intestate and testamentary succession and the administration of estates of deceased persons.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-matrimonial-causes-act",
+    "title": "Matrimonial Causes Act",
+    "citation": "Cap. 152",
+    "cap_number": "152",
+    "year": 1984,
+    "summary": "An Act to make provision for the law relating to matrimonial causes, including dissolution of marriage, separation, and nullity.",
+    "full_text": "An Act to make provision for the law relating to matrimonial causes, including dissolution of marriage, separation, and nullity.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-sexual-offences-act",
+    "title": "Sexual Offences Act",
+    "citation": "No. 3 of 2006",
+    "cap_number": null,
+    "year": 2006,
+    "summary": "An Act to make provision for the prevention and punishment of sexual offences and for connected purposes.",
+    "full_text": "An Act to make provision for the prevention and punishment of sexual offences and for connected purposes.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-limitation-of-actions-act",
+    "title": "Limitation of Actions Act",
+    "citation": "Cap. 22",
+    "cap_number": "22",
+    "year": 1968,
+    "summary": "An Act to consolidate and amend the law relating to the limitation of actions.",
+    "full_text": "An Act to consolidate and amend the law relating to the limitation of actions.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-negotiable-instruments-act",
+    "title": "Negotiable Instruments Act",
+    "citation": "Cap. 488",
+    "cap_number": "488",
+    "year": 1930,
+    "summary": "An Act to define and amend the law relating to bills of exchange, cheques, promissory notes, and other negotiable instruments.",
+    "full_text": "An Act to define and amend the law relating to bills of exchange, cheques, promissory notes, and other negotiable instruments.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-partnership-act",
+    "title": "Partnership Act",
+    "citation": "Cap. 24",
+    "cap_number": "24",
+    "year": 1930,
+    "summary": "An Act to define and amend the law relating to partnerships.",
+    "full_text": "An Act to define and amend the law relating to partnerships.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-arbitration-act",
+    "title": "Arbitration Act",
+    "citation": "No. 4 of 1995",
+    "cap_number": null,
+    "year": 1995,
+    "summary": "An Act to make provision for arbitration, including international commercial arbitration.",
+    "full_text": "An Act to make provision for arbitration, including international commercial arbitration.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-advocates-act",
+    "title": "Advocates Act",
+    "citation": "Cap. 16",
+    "cap_number": "16",
+    "year": 1982,
+    "summary": "An Act to regulate the profession of advocates, including admission, practice, and discipline.",
+    "full_text": "An Act to regulate the profession of advocates, including admission, practice, and discipline.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-county-governments-act",
+    "title": "County Governments Act",
+    "citation": "No. 17 of 2012",
+    "cap_number": null,
+    "year": 2012,
+    "summary": "An Act to make provision for the governance and management of county governments.",
+    "full_text": "An Act to make provision for the governance and management of county governments.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-leadership-and-integrity-act",
+    "title": "Leadership and Integrity Act",
+    "citation": "No. 1 of 2012",
+    "cap_number": null,
+    "year": 2012,
+    "summary": "An Act to give effect to Chapter Six of the Constitution on leadership and integrity of state officers.",
+    "full_text": "An Act to give effect to Chapter Six of the Constitution on leadership and integrity of state officers.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-judicial-service-act",
+    "title": "Judicial Service Act",
+    "citation": "No. 1 of 2011",
+    "cap_number": null,
+    "year": 2011,
+    "summary": "An Act to make provision for the administration of the Judiciary and the Judicial Service Commission.",
+    "full_text": "An Act to make provision for the administration of the Judiciary and the Judicial Service Commission.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-supreme-court-act",
+    "title": "Supreme Court Act",
+    "citation": "No. 7 of 2011",
+    "cap_number": null,
+    "year": 2011,
+    "summary": "An Act to make provision for the jurisdiction, powers, and procedures of the Supreme Court of Kenya.",
+    "full_text": "An Act to make provision for the jurisdiction, powers, and procedures of the Supreme Court of Kenya.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-fair-administrative-action-act",
+    "title": "Fair Administrative Action Act",
+    "citation": "No. 4 of 2015",
+    "cap_number": null,
+    "year": 2015,
+    "summary": "An Act to give effect to Article 47 of the Constitution on the right to fair administrative action.",
+    "full_text": "An Act to give effect to Article 47 of the Constitution on the right to fair administrative action.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-prevention-of-terrorism-act",
+    "title": "Prevention of Terrorism Act",
+    "citation": "No. 30 of 2012",
+    "cap_number": null,
+    "year": 2012,
+    "summary": "An Act to give effect to international obligations relating to the prevention of terrorism.",
+    "full_text": "An Act to give effect to international obligations relating to the prevention of terrorism.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-national-police-service-act",
+    "title": "National Police Service Act",
+    "citation": "No. 11A of 2011",
+    "cap_number": null,
+    "year": 2011,
+    "summary": "An Act to make provision for the organization, administration, and functions of the National Police Service.",
+    "full_text": "An Act to make provision for the organization, administration, and functions of the National Police Service.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-banking-act",
+    "title": "Banking Act",
+    "citation": "Cap. 488",
+    "cap_number": "488",
+    "year": 1986,
+    "summary": "An Act to regulate the business of banking in Kenya.",
+    "full_text": "An Act to regulate the business of banking in Kenya.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-insurance-act",
+    "title": "Insurance Act",
+    "citation": "Cap. 487",
+    "cap_number": "487",
+    "year": 1986,
+    "summary": "An Act to consolidate and amend the law relating to insurance.",
+    "full_text": "An Act to consolidate and amend the law relating to insurance.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-capital-markets-act",
+    "title": "Capital Markets Act",
+    "citation": "Cap. 485A",
+    "cap_number": "485A",
+    "year": 1989,
+    "summary": "An Act to make provision for the regulation of capital markets in Kenya.",
+    "full_text": "An Act to make provision for the regulation of capital markets in Kenya.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-stamp-duty-act",
+    "title": "Stamp Duty Act",
+    "citation": "Cap. 480",
+    "cap_number": "480",
+    "year": 1971,
+    "summary": "An Act to provide for the collection of stamp duty on instruments and transactions.",
+    "full_text": "An Act to provide for the collection of stamp duty on instruments and transactions.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-land-registration-act",
+    "title": "Land Registration Act",
+    "citation": "No. 3 of 2012",
+    "cap_number": null,
+    "year": 2012,
+    "summary": "An Act to consolidate and amend the law relating to the registration of interests in land.",
+    "full_text": "An Act to consolidate and amend the law relating to the registration of interests in land.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-physical-and-land-use-planning-act",
+    "title": "Physical and Land Use Planning Act",
+    "citation": "No. 13 of 2019",
+    "cap_number": null,
+    "year": 2019,
+    "summary": "An Act to make provision for physical and land use planning and development management.",
+    "full_text": "An Act to make provision for physical and land use planning and development management.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-community-land-act",
+    "title": "Community Land Act",
+    "citation": "No. 27 of 2016",
+    "cap_number": null,
+    "year": 2016,
+    "summary": "An Act to give effect to Article 63 of the Constitution on community land.",
+    "full_text": "An Act to give effect to Article 63 of the Constitution on community land.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-public-health-act",
+    "title": "Public Health Act",
+    "citation": "Cap. 242",
+    "cap_number": "242",
+    "year": 1986,
+    "summary": "An Act to make provision for the prevention and suppression of diseases and for the control of public health.",
+    "full_text": "An Act to make provision for the prevention and suppression of diseases and for the control of public health.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-mental-health-act",
+    "title": "Mental Health Act",
+    "citation": "Cap. 248",
+    "cap_number": "248",
+    "year": 1989,
+    "summary": "An Act to consolidate and amend the law relating to the care, treatment, and protection of persons with mental disorders.",
+    "full_text": "An Act to consolidate and amend the law relating to the care, treatment, and protection of persons with mental disorders.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-interpretation-and-general-provisions-act",
+    "title": "Interpretation and General Provisions Act",
+    "citation": "Cap. 2",
+    "cap_number": "2",
+    "year": 1930,
+    "summary": "An Act to make provision for the interpretation of written laws and for related matters.",
+    "full_text": "An Act to make provision for the interpretation of written laws and for related matters.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-government-proceedings-act",
+    "title": "Government Proceedings Act",
+    "citation": "Cap. 40",
+    "cap_number": "40",
+    "year": 1969,
+    "summary": "An Act to make provision for the institution of legal proceedings by and against the Government.",
+    "full_text": "An Act to make provision for the institution of legal proceedings by and against the Government.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-work-injury-benefits-act",
+    "title": "Work Injury Benefits Act",
+    "citation": "No. 13 of 2007",
+    "cap_number": null,
+    "year": 2007,
+    "summary": "An Act to provide for compensation for work-related injuries and diseases and for connected purposes.",
+    "full_text": "An Act to provide for compensation for work-related injuries and diseases and for connected purposes.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-trade-disputes-act",
+    "title": "Trade Disputes Act",
+    "citation": "No. 22 of 2007",
+    "cap_number": null,
+    "year": 2007,
+    "summary": "An Act to make provision for the resolution of trade disputes and for connected purposes.",
+    "full_text": "An Act to make provision for the resolution of trade disputes and for connected purposes.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-proceeds-of-crime-and-anti-money-laundering-act",
+    "title": "Proceeds of Crime and Anti-Money Laundering Act",
+    "citation": "No. 9 of 2009",
+    "cap_number": null,
+    "year": 2009,
+    "summary": "An Act to make provision for the confiscation and forfeiture of proceeds of crime and for anti-money laundering measures.",
+    "full_text": "An Act to make provision for the confiscation and forfeiture of proceeds of crime and for anti-money laundering measures.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  },
+  {
+    "id": "stat-brain-witness-protection-act",
+    "title": "Witness Protection Act",
+    "citation": "No. 11 of 2016",
+    "cap_number": null,
+    "year": 2016,
+    "summary": "An Act to make provision for the protection of witnesses in criminal proceedings.",
+    "full_text": "An Act to make provision for the protection of witnesses in criminal proceedings.",
+    "sections": [],
+    "source": "brain_metadata",
+    "chapters": []
+  }
+]

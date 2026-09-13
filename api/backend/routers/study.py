@@ -3,6 +3,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select
 from typing import List, Optional
 from api.backend.models.database import async_session, StudyNote
+from api.backend.core import get_session
 from api.backend.models.schemas import StudyNoteCreate, StudyNoteUpdate, StudyNoteResponse, GenerateNotesRequest
 from api.backend.services.ai_service import generate_study_notes
 from datetime import datetime
@@ -13,11 +14,6 @@ from api.backend.routers.auth import get_current_user
 from api.backend.models.database import User
 
 router = APIRouter()
-
-
-async def get_session():
-    async with async_session() as session:
-        yield session
 
 
 @router.get("/notes", response_model=List[StudyNoteResponse])

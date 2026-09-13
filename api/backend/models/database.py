@@ -8,15 +8,27 @@ import uuid
 DATABASE_URL = os.getenv("DATABASE_URL", "")
 
 if not DATABASE_URL:
-    # Use /tmp for Vercel serverless (writable), or local dir for dev
+    # Prefer a project-local file for dev; fall back to temp (Vercel/serverless)
     import tempfile
-    _db_dir = tempfile.gettempdir()
-    DATABASE_URL = f"sqlite+aiosqlite:///{os.path.join(_db_dir, 'juriscore.db')}"
+    _local = os.path.join(os.path.dirname(__file__), "..", "..", "data", "app.db")
+    _local = os.path.abspath(_local)
+    if os.getenv("VERCEL"):
+        DATABASE_URL = f"sqlite+aiosqlite:///{os.path.join(tempfile.gettempdir(), 'juriscore.db')}"
+    else:
+        os.makedirs(os.path.dirname(_local), exist_ok=True)
+        DATABASE_URL = f"sqlite+aiosqlite:///{_local}"
 
 if DATABASE_URL.startswith("postgresql://"):
     DATABASE_URL = DATABASE_URL.replace("postgresql://", "postgresql+asyncpg://", 1)
 
-engine = create_async_engine(DATABASE_URL, echo=False)
+_is_sqlite = DATABASE_URL.startswith("sqlite")
+_engine_kwargs = {"echo": False}
+if _is_sqlite:
+    from sqlalchemy.pool import NullPool
+    _engine_kwargs["poolclass"] = NullPool
+    _engine_kwargs["connect_args"] = {"timeout": 30, "check_same_thread": False}
+
+engine = create_async_engine(DATABASE_URL, **_engine_kwargs)
 async_session = async_sessionmaker(engine, expire_on_commit=False, class_=AsyncSession)
 
 

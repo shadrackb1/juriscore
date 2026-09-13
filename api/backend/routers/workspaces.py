@@ -5,6 +5,7 @@ from typing import Optional, List, Dict, Any
 from datetime import datetime, timedelta
 from pydantic import BaseModel
 from api.backend.models.database import async_session, Case, Statute
+from api.backend.core import get_session
 import logging
 import uuid
 import json
@@ -15,11 +16,6 @@ from api.backend.models.database import User
 
 logger = logging.getLogger("juriscore")
 router = APIRouter()
-
-
-async def get_session():
-    async with async_session() as session:
-        yield session
 
 
 # ── Pydantic models ──────────────────────────────────────────────────────────
