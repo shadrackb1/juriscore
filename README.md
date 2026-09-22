@@ -1,10 +1,12 @@
 # Juriscore
 
-<img src="./assets/header.svg" width="100%" alt="Juriscore" />
+<img src="./assets/header.svg" width="100%" alt="Juriscore — case law is a graph. students get an API." />
 
-**Legal research for Kenyan law students** — search case law and statutes, read structured briefs, save notes, and study flashcards without wading through raw PDFs.
+**Legal research for Kenyan law students.** Search case law and statutes, read structured briefs, save notes, study flashcards, and cite in Kenyan formats — without wading through raw PDFs.
 
-Juriscore is **independent of kenyalaw.org at runtime**. Core catalogs ship with the repo (~25k local documents) and are served from Juriscore’s own corpus.
+> Brand note: headers across this account are generative SVGs (see `assets/header.svg` and the profile forge scripts). Same ink, same voice, one system.
+
+Juriscore is **independent of kenyalaw.org at runtime**. Core catalogs ship with the repo (**~25k local documents**) and are served from Juriscore's own corpus.
 
 | | |
 |---|---|
@@ -12,39 +14,27 @@ Juriscore is **independent of kenyalaw.org at runtime**. Core catalogs ship with
 | **Mobile** | Expo / React Native client with auth, notebook, flashcards |
 | **API** | FastAPI — `/api/v1` OpenAPI docs |
 | **Corpus** | Constitution, statutes, judgments, gazettes, tribunals, cause lists, and more |
+| **Live** | https://juriscore-three.vercel.app |
 
----
+**Hard constraint it answers:** a directory of links and 80-page PDFs is not research. The student loop is search → brief → save → study → cite, and every step should finish without leaving the tab or waiting on kenyalaw.org.
 
-## Why Juriscore
+## How it works
 
-Kenyan legal research is often a directory of links and PDFs. Juriscore is built for the student loop:
+1. **Search** a principle, case name, or statute across the local corpus.
+2. **Read** a brief — facts, issues, holding, ratio, obiter.
+3. **Save** to a notebook or bookmark.
+4. **Study** with flashcard decks (spaced-repetition fields included).
+5. **Cite** in a common Kenyan format.
 
-1. **Search** a principle, case name, or statute  
-2. **Read** a brief — facts, issues, holding, ratio, obiter  
-3. **Save** to a notebook or bookmark  
-4. **Study** with flashcards  
-5. **Cite** in a common Kenyan format  
-
-Primary UI is intentionally small: Home · Search · Constitution · Notebook · Flashcards · Bookmarks. Deeper catalogs stay in the API and a secondary Library section.
-
----
+Primary UI stays small on purpose: Home · Search · Constitution · Notebook · Flashcards · Bookmarks. Deeper catalogs live in the API and a secondary Library section.
 
 ## Features
 
-### Research
-- Universal search across local corpus (constitution, statutes, judgments, gazettes, tribunals, …)
-- Filters by document type (cases, statutes, constitution, gazettes, tribunals)
-- Structured briefs from curated authorities; full-text extracts where available
-- Citation helper for common Kenyan formats
-- Guest browse without an account
+**Research** — universal search across the local corpus (constitution, statutes, judgments, gazettes, tribunals, …); filters by document type; structured briefs from curated authorities and full-text extracts where available; citation helper for common Kenyan formats; guest browse without an account.
 
-### Study tools
-- Notebook (study notes) — create, list, delete
-- Flashcard decks with spaced-repetition fields — create deck, add cards, study mode
-- Bookmarks on search results
-- Save any result as a note or flashcard from the brief view
+**Study tools** — notebook (create, list, delete); flashcard decks with spaced-repetition fields (create deck, add cards, study mode); bookmarks on search results; save any result as a note or flashcard from the brief view.
 
-### Corpus (independent of kenyalaw.org)
+## Corpus (independent of kenyalaw.org)
 
 | Collection | Count |
 |------------|------:|
@@ -67,9 +57,7 @@ Primary UI is intentionally small: Home · Search · Constitution · Notebook ·
 | Law reports | 5 |
 | **Total documents** | **~24,905** |
 
-Judgment catalog entries include title, citation, court, year, topic, and source metadata. Curated landmark cases include fuller briefs.
-
----
+Judgment catalog entries carry title, citation, court, year, topic, and source metadata. Curated landmark cases include fuller briefs.
 
 ## Architecture
 
@@ -114,11 +102,9 @@ juriscore/
 
 **Stack:** FastAPI · SQLAlchemy (SQLite / Postgres) · JWT auth · Expo/React Native · optional Docker · Vercel serverless.
 
----
+## Run locally
 
-## Quick start
-
-### 1. API + web UI
+### API + web UI
 
 ```bash
 pip install -r requirements.txt
@@ -134,13 +120,9 @@ Open **http://localhost:8000/** — research workspace at `/`.
 | `/health` | Health check |
 | `/api/v1/corpus/stats` | Corpus inventory |
 
-Docker:
+Docker: `docker compose up --build`
 
-```bash
-docker compose up --build
-```
-
-### 2. Mobile (Expo)
+### Mobile (Expo)
 
 ```bash
 cd frontend
@@ -150,8 +132,6 @@ npx expo start
 ```
 
 Android emulator: use `http://10.0.2.2:8000` as the API URL.
-
----
 
 ## API overview
 
@@ -171,8 +151,6 @@ Base path: `/api/v1`
 | **Catalogs** | `/gazettes/` · `/tribunals/` · `/cause-list` · `/parliament` · `/treaties` · `/eac` · `/counties` · `/publications` |
 
 Protected routes require `Authorization: Bearer <token>`.
-
----
 
 ## Deploy on Vercel
 
@@ -196,9 +174,7 @@ Ready out of the box (`vercel.json` + `api/index.py` + `runtime.txt`).
 npx vercel --prod
 ```
 
-**Persistence:** Serverless SQLite is ephemeral. For durable accounts and notes, set `DATABASE_URL` to Postgres, e.g. `postgresql+asyncpg://user:pass@host/db`.
-
----
+**Persistence:** serverless SQLite is ephemeral. For durable accounts and notes, set `DATABASE_URL` to Postgres, e.g. `postgresql+asyncpg://user:pass@host/db`.
 
 ## Configuration notes
 
@@ -206,8 +182,6 @@ npx vercel --prod
 - **Enrichment (optional):** `AUTO_CRAWL=true` or `LIVE_KENYALAW=true` to pull more full-text over time.
 - **AI chat / summaries:** optional keys (`OPENAI_API_KEY`, NVIDIA/Mistral in `.env`); search and study tools work without them.
 - **Root `.env`** is gitignored; see `api/backend/.env.example`.
-
----
 
 ## Development
 
@@ -224,7 +198,12 @@ python scripts/expand_corpus.py
 
 Design notes for the web UI: [`public/DESIGN_NOTES.md`](public/DESIGN_NOTES.md).
 
----
+## Links
+
+- Live: https://juriscore-three.vercel.app
+- Citizens' legal literacy: [knowyourrightske](https://github.com/shadrackb1/knowyourrightske) · [know-your-rights](https://github.com/shadrackb1/know-your-rights)
+- Offline research stick: [research-in-a-stick](https://github.com/shadrackb1/research-in-a-stick)
+- Profile: [shadrackb1](https://github.com/shadrackb1)
 
 ## License
 
